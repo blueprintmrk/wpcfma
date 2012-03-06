@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
 
-	<?php wp_head(); ?>
+	
     
     <!--[if lte IE 8]>
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
@@ -39,7 +39,7 @@
     
     <!-- Add jQuery library -->
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-      
+    <?php wp_head(); ?>  
     
     <!-- Begin jScrollPane -->
      <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.jscrollpane.css" />
@@ -68,6 +68,7 @@
         <script src="<?php bloginfo('template_url'); ?>/js/selectivizr.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie-lte8.css"/>
     <![endif]--> 
+    
 </head>
 
 <body <?php body_class(); ?> >

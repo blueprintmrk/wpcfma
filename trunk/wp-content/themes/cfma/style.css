@@ -372,7 +372,7 @@ b				{ font-weight: bold; }
 	min-height: 360px;
 }
 .page-mid-content a img{
-    
+    padding-bottom:  10px;
     padding-right:  10px;
 }
 
