@@ -318,8 +318,7 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
             echo __('');
          endif;
          wp_reset_query();
-    	//exit;
-        die(); 
+    	exit;
     }
  
  
