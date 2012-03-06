@@ -90,7 +90,9 @@
 	div.dark_square .pp_expand:hover { background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat; cursor: pointer; } /* Expand button hover */
 	div.dark_square .pp_contract { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat; cursor: pointer; } /* Contract button */
 	div.dark_square .pp_contract:hover { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -47px no-repeat; cursor: pointer; } /* Contract button hover */
-	div.dark_square .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
+	div.dark_square .pp_close { 
+	   background: url(../images/prettyPhoto/yellow_square/sprite01.png) top left no-repeat;
+	   } /* Close button */
 	div.dark_square #pp_full_res .pp_inline { color: #fff; }
 	div.dark_square .pp_gallery a.pp_arrow_previous,
 	div.dark_square .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
@@ -102,8 +104,16 @@
 	div.dark_square .pp_arrow_next { background: url(../images/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat; } /* The next arrow in the bottom nav */
 		div.dark_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
 	
-	div.dark_square .pp_next:hover { background: url(../images/prettyPhoto/dark_square/btnNext.png) center right  no-repeat; cursor: pointer; } /* Next button */
-	div.dark_square .pp_previous:hover { background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat; cursor: pointer; } /* Previous button */
+	div.dark_square .pp_next:hover { background: url(../images/prettyPhoto/dark_square/btnNext.png) center right  no-repeat; cursor: pointer; 
+    position: absolute;
+    right: -57px;
+    
+    } /* Next button */
+	div.dark_square .pp_previous:hover { background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat; cursor: pointer; 
+    position: absolute;
+    left: -57px;
+    
+    } /* Previous button */
 
 
 	/* ----------------------------------
@@ -199,6 +209,10 @@
 		.pp_top {
 			height: 20px;
 			position: relative;
+            border-top: 1px solid #b19243;
+            border-left: 1px solid #b19243;
+            border-right: 1px solid #b19243;
+            width: 100%;
 		}
 			* html .pp_top { padding: 0 20px; }
 		
@@ -236,6 +250,8 @@
 			position: relative;
 			text-align: left;
 			width: 100%;
+            border-left: 1px solid #b19243;
+            border-right: 1px solid #b19243;
 		}
 		
 			.pp_content_container .pp_left { padding-left: 20px; }
@@ -337,21 +353,29 @@
 			}
 		
 		a.pp_next {
-			background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+            background: url(../images/prettyPhoto/dark_square/btnNext.png) center right  no-repeat;
 			display: block;
 			float: right;
 			height: 100%;
-			text-indent: -10000px;
+		/*	text-indent: -10000px;*/
 			width: 49%;
+            
+            position: absolute;
+            right: -57px;
+            
 		}
 			
 		a.pp_previous {
-			background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+            background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat;
+            
 			display: block;
 			float: left;
 			height: 100%;
-			text-indent: -10000px;
+		/*	text-indent: -10000px;*/
 			width: 49%;
+            
+            position: absolute;
+            left: -57px;
 		}
 		
 		a.pp_expand,
@@ -372,11 +396,24 @@
 			float: right;
 			line-height:22px;
 			text-indent: -10000px;
+            
+            cursor: pointer;
+            height: 19px;
+            width: 19px;
+            position: absolute;
+            right: -18px;
+            top: -18px;
+            z-index: 1103;
+            background: url(../images/prettyPhoto/yellow_square/sprite01.png) top left no-repeat;    
 		}
 		
 		.pp_bottom {
 			height: 20px;
 			position: relative;
+            border-bottom: 1px solid #b19243;
+            border-left: 1px solid #b19243;
+            border-right: 1px solid #b19243;
+            width:  100%;
 		}
 			* html .pp_bottom { padding: 0 20px; }
 			

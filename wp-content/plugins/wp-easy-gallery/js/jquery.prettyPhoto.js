@@ -34,6 +34,7 @@
 							<div class="pp_left"></div> \
 							<div class="pp_middle"></div> \
 							<div class="pp_right"></div> \
+                            <a class="pp_close" href="#">Close</a> \
 						</div> \
 						<div class="pp_content_container"> \
 							<div class="pp_left"> \
@@ -43,18 +44,12 @@
 									<div class="pp_fade"> \
 										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
 										<div class="pp_hoverContainer"> \
-											<a class="pp_next" href="#">next</a> \
-											<a class="pp_previous" href="#">previous</a> \
+											<a class="pp_next" href="#">&nbsp;</a> \
+											<a class="pp_previous" href="#">&nbsp;</a> \
 										</div> \
 										<div id="pp_full_res"></div> \
 										<div class="pp_details clearfix"> \
 											<p class="pp_description"></p> \
-											<a class="pp_close" href="#">Close</a> \
-											<div class="pp_nav"> \
-												<a href="#" class="pp_arrow_previous">Previous</a> \
-												<p class="currentTextHolder">0/0</p> \
-												<a href="#" class="pp_arrow_next">Next</a> \
-											</div> \
 										</div> \
 									</div> \
 								</div> \
