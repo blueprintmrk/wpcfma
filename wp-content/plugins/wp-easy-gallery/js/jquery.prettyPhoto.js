@@ -224,7 +224,8 @@
 						};
 					
 						imgPreloader.src = pp_images[set_position];
-					break;
+					
+                    break;
 				
 					case 'youtube':
 						correctSizes = _fitToViewport(movie_width,movie_height); // Fit item to viewport
@@ -578,7 +579,7 @@
 				'top':-10000
 			});
 			detailsHeight += $pp_details.height();
-			detailsHeight = (detailsHeight <= 34) ? 36 : detailsHeight; // Min-height for the details
+		//	detailsHeight = (detailsHeight <= 34) ? 36 : detailsHeight; // Min-height for the details
 			if($.browser.msie && $.browser.version==7) detailsHeight+=8;
 			$pp_details.remove();
 			

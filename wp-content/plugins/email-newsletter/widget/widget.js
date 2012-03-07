@@ -10,7 +10,8 @@ function GetXmlHttpObject(handler)
 	var objXmlHttp=null
 	if (navigator.userAgent.indexOf("Opera")>=0)
 	{
-		alert("This page doesn't work in Opera") 
+	//	alert("This page doesn't work in Opera") 
+        document.getElementById("eemail_msg").innerHTML=" « This page doesn't work in Opera  » ";
 		return 
 	}
 	if (navigator.userAgent.indexOf("MSIE")>=0)
@@ -28,7 +29,8 @@ function GetXmlHttpObject(handler)
 		} 
 		catch(e)
 		{ 
-			alert("Error. Scripting for ActiveX might be disabled") 
+		//	alert("Error. Scripting for ActiveX might be disabled") 
+            document.getElementById("eemail_msg").innerHTML=" « Error. Scripting for ActiveX might be disabled » ";
 			return 
 		} 
 	} 
@@ -47,33 +49,22 @@ function eemail_submit_ajax(siteurl)
     if(txt_email_newsletter.value=="")
     {
         //alert("Please enter the email address");
-        alert("S'il vous plaît entrez l'adresse e-mail");
-        
+        //alert("S'il vous plaît entrez l'adresse e-mail");
+        document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrez l'adresse e-mail » ";
         txt_email_newsletter.focus();
         return false;    
     }
 	if(txt_email_newsletter.value!="" && (txt_email_newsletter.value.indexOf("@",0)==-1 || txt_email_newsletter.value.indexOf(".",0)==-1))
     {
         // alert("Please enter valid email");
-         //  document.getElementById("eemail_msg").innerHTML="S'il vous plaît entrer une adresse valide";
-     //   $('.eemail_msg').show();
-     /*   setTimeout(
-        function() {
-            $('.eemail_msg').hide()
-        }
-        ,2000);
-    */    
-       // alert("S'il vous plaît entrer une adresse valide");
-        jQuery.prettyPhoto.open('../../../wp-content/themes/cfma/images/shadowboxnewsletter.jpg',''," «  S'il vous plaît entrer une adresse valide » ");
-       
-     
+        document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrer une adresse valide » ";
         
         txt_email_newsletter.focus();
         txt_email_newsletter.select();
         return false;
     }
     
-	document.getElementById("eemail_msg").innerHTML="loading...";
+//	document.getElementById("eemail_msg").innerHTML="loading...";
 	var date_now=new Date()
     var mynumber=Math.random()
 	var url=siteurl+"/eemail_subscribe.php?txt_email_newsletter="+ txt_email_newsletter.value + "&timestamp=" + date_now + "&action=" + mynumber;
@@ -98,7 +89,7 @@ function newchanged_ncc()
 		}
 		else if((xmlHttp.responseText).trim()=="exs")
 		{
-		    document.getElementById("eemail_msg").innerHTML="Email existent déjà.";
+		    document.getElementById("eemail_msg").innerHTML="« Email deja existant. »";
 		}
 		else
 		{

@@ -16,8 +16,7 @@
   </div>
 -->
 
-    <div class="eemail_msg" style="width: 1px; 
-               height: 1px; display: none;">     
+    <div id="pre_eemail_msg">     
         <div id="eemail_msg" ></div> 
     </div>
     
@@ -41,14 +40,13 @@
     </div>
     
     <div class="whitecolumn16 div_intranet_submit">
-        <input class="eemail_textbox_button intranet_submit" 
-            name="eemail_txt_Button" 
+        <a href="#pre_eemail_msg" rel="prettyPhoto[inline]" 
+        class="eemail_textbox_button intranet_submit"
+        name="eemail_txt_Button" 
             id="eemail_txt_Button" 
             onClick="return eemail_submit_ajax('<?php echo emailnews_plugin_url('widget'); ?>')" 
-            value="<?php echo get_option('eemail_widget_but_cap'); ?>" 
-            type="button"
-            size="2" 
-            maxlength="2" />  
+        ><?php echo get_option('eemail_widget_but_cap'); ?></a>
+
     </div>
     <div class="clear"></div>
 </form>
