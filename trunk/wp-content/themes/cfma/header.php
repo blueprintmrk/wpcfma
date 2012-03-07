@@ -27,11 +27,6 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
-
-	
-    
     <!--[if lte IE 8]>
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,6 +34,10 @@
     
     <!-- Add jQuery library -->
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+     
+   	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+    
     <?php wp_head(); ?>  
     
     <!-- Begin jScrollPane -->

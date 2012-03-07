@@ -67,22 +67,10 @@ $(document).ready(function(){
    
     //<!-- End Jcarousel -->
     
-    // Using Ajax
-    /*
-    jQuery('#myForm1').ajaxForm({
-        data: {
-            // additional data to be included along with the form fields
-        },
-        dataType: 'json',
-        beforeSubmit: function(formData, jqForm, options) {
-            // optionally process data before submitting the form via AJAX
-        },
-        success : function(responseText, statusText, xhr, $form) {
-            // code that's executed when the request is processed successfully
-        }
-    });
     
-    */
+    
+    // Using Ajax
+   
     //End Using Ajax
     
     

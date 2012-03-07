@@ -265,7 +265,8 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
     wp_enqueue_script( 'json-form' );
 
  */
-
+ 
+ wp_enqueue_script( 'ajax-script', get_bloginfo('template_directory').'/js/jquery.prettyPhotoCustom.js', array('jquery'));
      
     wp_enqueue_script( 'ajax-script', get_bloginfo('template_directory').'/lib/js/ajax.js', array('jquery')); // jQuery will be included automatically
     
