@@ -251,16 +251,7 @@ function wpcf7_plugin_action_links( $links, $file ) {
 add_action( 'wpcf7_admin_before_subsubsub', 'wpcf7_cf7com_links', 9 );
 
 function wpcf7_cf7com_links( &$contact_form ) {
-	$links = '<div class="cf7com-links">'
-		. '<a href="' . esc_url_raw( __( 'http://contactform7.com/', 'wpcf7' ) ) . '" target="_blank">'
-		. esc_html( __( 'Contactform7.com', 'wpcf7' ) ) . '</a>&ensp;'
-		. '<a href="' . esc_url_raw( __( 'http://contactform7.com/docs/', 'wpcf7' ) ) . '" target="_blank">'
-		. esc_html( __( 'Docs', 'wpcf7' ) ) . '</a> - '
-		. '<a href="' . esc_url_raw( __( 'http://contactform7.com/faq/', 'wpcf7' ) ) . '" target="_blank">'
-		. esc_html( __( 'FAQ', 'wpcf7' ) ) . '</a> - '
-		. '<a href="' . esc_url_raw( __( 'http://contactform7.com/support/', 'wpcf7' ) ) . '" target="_blank">'
-		. esc_html( __( 'Support', 'wpcf7' ) ) . '</a>'
-		. '</div>';
+	$links = '';
 
 	echo apply_filters( 'wpcf7_cf7com_links', $links );
 }
@@ -313,15 +304,12 @@ function wpcf7_donation_link( &$contact_form ) {
 		return;
 
 	$texts = array(
-		__( "Contact Form 7 needs your support. Please donate today.", 'wpcf7' ),
-		__( "Your contribution is needed for making this plugin better.", 'wpcf7' ) );
+		__( "", 'wpcf7' ),
+		__( "", 'wpcf7' ) );
 
 	$text = $texts[array_rand( $texts )];
 
 ?>
-<div class="donation">
-<p><a href="<?php echo esc_url_raw( __( 'http://contactform7.com/donate/', 'wpcf7' ) ); ?>"><?php echo esc_html( $text ); ?></a> <a href="<?php echo esc_url_raw( __( 'http://contactform7.com/donate/', 'wpcf7' ) ); ?>" class="button"><?php echo esc_html( __( "Donate", 'wpcf7' ) ); ?></a></p>
-</div>
 <?php
 }
 

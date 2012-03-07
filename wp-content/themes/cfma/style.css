@@ -311,6 +311,7 @@ b				{ font-weight: bold; }
 	width: 160px;
 	height: 100%;
 	text-align: center;
+
 	
 }
 .intranet_form .form_content .intranet p{
@@ -721,6 +722,30 @@ table.demande_dinformations  textarea {
     margin-top: 4px;
     
 }
+#eemailbox_close {
+    background: url("images/sprite01.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+	text-indent: -10000px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    z-index: 1103;   
+}
+.eemail_msg{
+    width: 555px; 
+    height: 60px; 
+    display: none; 
+    position: absolute; 
+    top:  30%; 
+    left:  21%; 
+    border: 1px solid yellow; 
+    z-index: 1103;  
+}
+
+
+
 
 }/* END screen media */
 
