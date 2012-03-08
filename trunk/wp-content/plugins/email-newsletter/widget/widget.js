@@ -64,13 +64,14 @@ function eemail_submit_ajax(siteurl)
         return false;
     }
     
-//	document.getElementById("eemail_msg").innerHTML="loading...";
-	var date_now=new Date()
-    var mynumber=Math.random()
+	document.getElementById("eemail_msg").innerHTML="loading...";
+	var date_now=new Date();
+    var mynumber=Math.random();
 	var url=siteurl+"/eemail_subscribe.php?txt_email_newsletter="+ txt_email_newsletter.value + "&timestamp=" + date_now + "&action=" + mynumber;
-    xmlHttp=GetXmlHttpObject(newchanged_ncc)
-    xmlHttp.open("GET", url , true)
-    xmlHttp.send(null)
+    xmlHttp=GetXmlHttpObject(newchanged_ncc);
+    xmlHttp.open("GET", url , true);
+    xmlHttp.send(null);
+    return true;
 	
 }
 
@@ -93,12 +94,21 @@ function newchanged_ncc()
 		}
 		else
 		{
-			document.getElementById("eemail_msg").innerHTML="S'il vous plaît essayer après un certain temps.";
+			document.getElementById("eemail_msg").innerHTML="« S'il vous plaît essayer après un certain temps. »";
 			document.getElementById("eemail_txt_email").value="";
 		}
 	} 
 } 
-
+$(document).ready(function(){
+    $('#eemail_txt_email').keypress(function(event){
+        if(event.which == 13) {
+            $('#eemail_txt_Button').trigger('click');
+        }
+    });
+    $('#eemail_txt_email').click(function(){
+        eemail_submit_ajax($('#testurl').val());
+    });
+});
 String.prototype.trim = function() {
 	return this.replace(/^\s+|\s+$/g,"");
 }

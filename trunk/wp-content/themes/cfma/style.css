@@ -739,6 +739,20 @@ table.demande_dinformations  textarea {
 }
 
 
+
+/* ----------------------------------
+		Newsletter template
+	----------------------------------- */
+.page_wrap_newsletter * { margin: 0; padding: 0; }
+.page_wrap_newsletter{
+    
+}
+
+
+
+
+
+
 }/* END screen media */
 
 
