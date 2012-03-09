@@ -580,6 +580,7 @@
 			});
 			detailsHeight += $pp_details.height();
 		//	detailsHeight = (detailsHeight <= 34) ? 36 : detailsHeight; // Min-height for the details
+            detailsHeight = (detailsHeight <= 32) ? 32 : detailsHeight; // Min-height for the details
 			if($.browser.msie && $.browser.version==7) detailsHeight+=8;
 			$pp_details.remove();
 			

@@ -1,10 +1,12 @@
-<script language="javascript" type="text/javascript" src="<?php echo emailnews_plugin_url('widget/widget.js'); ?>"></script>
 
+<!--
+ <script language="javascript" type="text/javascript" src="<?php echo emailnews_plugin_url('widget/widget.js'); ?>"></script>
+-->
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo emailnews_plugin_url('widget/widget.css'); ?>" />
 
 
     <div id="pre_eemail_msg">     
-        <div id="eemail_msg" ></div> 
+        <div id="eemail_msg" class="eemail_msg" ></div> 
     </div>
 
     <div class="clear"></div>
@@ -14,8 +16,8 @@
         <input class="eemail_textbox_class intranet_voire_e_mail" 
         name="eemail_txt_email" 
         id="eemail_txt_email"  
-        value="" 
-        placeholder="<?php echo get_option('eemail_widget_txt_cap'); ?>"
+        value="<?php echo get_option('eemail_widget_txt_cap'); ?>" 
+     
         type="text" 
         maxlength="40" />
             
@@ -26,7 +28,7 @@
         class="eemail_textbox_button intranet_submit"
         name="eemail_txt_Button" 
             id="eemail_txt_Button" 
-             
+         onClick="return eemail_submit_ajax('<?php echo emailnews_plugin_url('widget'); ?>')"      
         ><?php echo get_option('eemail_widget_but_cap'); ?></a>
 
     </div>

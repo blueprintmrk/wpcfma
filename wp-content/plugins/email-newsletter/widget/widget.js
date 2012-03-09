@@ -1,4 +1,4 @@
-﻿// JScript File
+// JScript File
 //################################################################################
 //###### Project   : Email newsletter										######
 //###### Author    : Gopi                        							######
@@ -43,35 +43,70 @@ function GetXmlHttpObject(handler)
 	}
 } 
 function eemail_submit_ajax(siteurl)
-{
-	txt_email_newsletter=document.getElementById("eemail_txt_email");
-	
-    if(txt_email_newsletter.value=="")
+{    
+	//txt_email_newsletter=document.getElementById("eemail_txt_email");
+	email = $("#eemail_txt_email");
+    if(email.val()=="")
     {
         //alert("Please enter the email address");
         //alert("S'il vous plaît entrez l'adresse e-mail");
-        document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrez l'adresse e-mail » ";
-        txt_email_newsletter.focus();
+       // document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrez l'adresse e-mail » ";
+        
+        $('.eemail_msg').html(" « S'il vous plaît entrez l'adresse e-mail » ");
+        email.focus();
         return false;    
     }
-	if(txt_email_newsletter.value!="" && (txt_email_newsletter.value.indexOf("@",0)==-1 || txt_email_newsletter.value.indexOf(".",0)==-1))
+	if(email.val()!="" && (email.val().indexOf("@",0)==-1 || email.val().indexOf(".",0)==-1))
     {
         // alert("Please enter valid email");
-        document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrer une adresse valide » ";
-        
-        txt_email_newsletter.focus();
-        txt_email_newsletter.select();
+       // document.getElementById("eemail_msg").innerHTML=" « S'il vous plaît entrer une adresse valide » ";
+        $('.eemail_msg').html(" « S'il vous plaît entrer une adresse valide » ");
+        //alert($('.eemail_msg').text());
+        email.select();
         return false;
     }
     
-	document.getElementById("eemail_msg").innerHTML="loading...";
+//	document.getElementById("eemail_msg").innerHTML="loading...";
+    $('.eemail_msg').html("loading...");
+   // document.getElementById("eemail_msg").innerHTML= txt_email_newsletter.value;
 	var date_now=new Date();
     var mynumber=Math.random();
-	var url=siteurl+"/eemail_subscribe.php?txt_email_newsletter="+ txt_email_newsletter.value + "&timestamp=" + date_now + "&action=" + mynumber;
-    xmlHttp=GetXmlHttpObject(newchanged_ncc);
-    xmlHttp.open("GET", url , true);
-    xmlHttp.send(null);
-    return true;
+//	var url=siteurl+"/eemail_subscribe.php?txt_email_newsletter="+ txt_email_newsletter.value + "&timestamp=" + date_now + "&action=" + mynumber;
+   // alert(siteurl);
+    $.post(ajax_object_newsletter.ajaxurl_newsletter, {
+			action: 'ajax_newsletter',
+			Email: email.val()
+		}, function(data2) {
+		  
+                    if(data2 == null) {
+                        
+                        //Please try after some time.
+            		//	document.getElementById("eemail_msg").innerHTML="« S'il vous plaît essayer après un certain temps. »";
+                        $('.eemail_msg').html("« S'il vous plaît essayer après un certain temps. »");
+                      //  $('.eemail_msg').html((xmlHttp.responseText).trim());
+            			email.val("");
+                    }
+            		if(data2=="succ")
+            		{
+            		//	document.getElementById("eemail_msg").innerHTML='Subscribed successfully.';
+                    //	document.getElementById("eemail_msg").innerHTML='« Votre inscription a bien été enregistrée Nous vous remercions de l’intérêt que vous portez à la CFMA. Vous recevrez bientôt notre newsletter »';
+                        $('.eemail_msg').html("« Votre inscription a bien été enregistrée Nous vous remercions de l’intérêt que vous portez à la CFMA. Vous recevrez bientôt notre newsletter »");
+            			email.val("");
+            		}
+            		else if(data2=="exs")
+            		{
+            		   // document.getElementById("eemail_msg").innerHTML="« Email deja existant. »";
+                        $('.eemail_msg').html("« Email deja existant. »");
+            		}
+            /*	jQuery(".form_content a[rel^='prettyPhoto']").prettyPhoto({
+                    theme:'light_square'
+                });*/
+            	
+		});
+  //  xmlHttp=GetXmlHttpObject(newchanged_ncc);
+ //   xmlHttp.open("GET", url , true);
+                
+   
 	
 }
 
@@ -84,20 +119,24 @@ function newchanged_ncc()
 		if((xmlHttp.responseText).trim()=="succ")
 		{
 		//	document.getElementById("eemail_msg").innerHTML='Subscribed successfully.';
-        	document.getElementById("eemail_msg").innerHTML='« Votre inscription a bien été enregistrée Nous vous remercions de l’intérêt que vous portez à la CFMA. Vous recevrez bientôt notre newsletter »';
-
+        //	document.getElementById("eemail_msg").innerHTML='« Votre inscription a bien été enregistrée Nous vous remercions de l’intérêt que vous portez à la CFMA. Vous recevrez bientôt notre newsletter »';
+            $('.eemail_msg').html("« Votre inscription a bien été enregistrée Nous vous remercions de l’intérêt que vous portez à la CFMA. Vous recevrez bientôt notre newsletter »");
 			document.getElementById("eemail_txt_email").value="";
 		}
 		else if((xmlHttp.responseText).trim()=="exs")
 		{
-		    document.getElementById("eemail_msg").innerHTML="« Email deja existant. »";
+		   // document.getElementById("eemail_msg").innerHTML="« Email deja existant. »";
+            $('.eemail_msg').html("« Email deja existant. »");
 		}
 		else
 		{
-			document.getElementById("eemail_msg").innerHTML="« S'il vous plaît essayer après un certain temps. »";
+		      //Please try after some time.
+		//	document.getElementById("eemail_msg").innerHTML="« S'il vous plaît essayer après un certain temps. »";
+            $('.eemail_msg').html("« S'il vous plaît essayer après un certain temps. »");
+          //  $('.eemail_msg').html((xmlHttp.responseText).trim());
 			document.getElementById("eemail_txt_email").value="";
 		}
-	} 
+	}
 } 
 $(document).ready(function(){
     $('#eemail_txt_email').keypress(function(event){
@@ -105,9 +144,13 @@ $(document).ready(function(){
             $('#eemail_txt_Button').trigger('click');
         }
     });
-    $('#eemail_txt_email').click(function(){
-        eemail_submit_ajax($('#testurl').val());
+ //   $('#eemail_txt_Button').click(function(){
+ //       eemail_submit_ajax($('#testurl').val());
+ //   });
+    $('.pp_close').click(function(){
+        $('.eemail_msg').html("");
     });
+
 });
 String.prototype.trim = function() {
 	return this.replace(/^\s+|\s+$/g,"");
