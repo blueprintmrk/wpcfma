@@ -154,7 +154,7 @@ function eemail_send_mail($recipients = array(), $subject = '', $message = '', $
 		$message = preg_replace('|&amp;|', '&', $message);
 		$mailtext = wordwrap(strip_tags($message), 80, "\n");
 	}
-	$mailtext = str_replace("\r\n", "<br />", $mailtext);
+//	$mailtext = str_replace("\r\n", "<br />", $mailtext);
 	if(count($recipients) > 0)
 	{
 		for ($i=0; $i<count($recipients); $i++) 
