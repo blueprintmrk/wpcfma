@@ -438,8 +438,8 @@ b				{ font-weight: bold; }
 	width: 112px;
 	height: 36px;
 	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+/*	display: table-cell;
+	vertical-align: middle;*/
 	
 }
 .cfma_sliders ul li .div_opacity p{
@@ -748,10 +748,46 @@ table.demande_dinformations  textarea {
     
 }
 
+/* ----------------------------------
+	Sliders	Image Black and white
+	----------------------------------- */
+       
+.cfma_sliders .fade-image {
+	display: block;
+	position: relative;
+	width: 112px;
+	height: 112px;
+	}
+ 
+.cfma_sliders .fade-image-a,
+.cfma_sliders .fade-image b {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.cfma_sliders .fade-image-a {
+	z-index: 5;
+/*	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;*/
+}	
+.cfma_sliders .fade-image-a:hover {
+	opacity: 0;
+}
 
-
-
-
+.cfma_sliders .fade-image .div_opacity{
+    z-index: 6;
+   	position: absolute;
+	left: 0;
+	top: 76px;
+}
+.cfma_sliders .fade-image .div_opacity table{
+    table-layout: auto;
+    width: 100%;
+    height: 100%;
+    
+}
 
 }/* END screen media */
 

@@ -55,22 +55,24 @@ class  gold_show_posts_categories extends WP_Widget {
                 if (have_posts()) : while (have_posts()): the_post();
                    	
                     echo '<li>';
-                    echo '<a href="'.get_permalink().'" >';
-                    echo '<div class="post_img_thumbnail" ';
-                        if ( has_post_thumbnail()){
-                         $thumb_id3 = get_post_thumbnail_id( $post->ID );
-                         $image3 = wp_get_attachment_image_src( $thumb_id3,'full' ); 
-                        echo 'style="background: url(';
-                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image3[0].'&w=112&h=112';  
-                        echo ') top left no-repeat;" ';
-                        }
-                    echo ' >';
-                    echo '<div class="div_height">&nbsp;</div>';
-                    echo '<div class="div_opacity"><p>';
-                               echo  get_the_title();
-                    echo '</p></div>';
+                    echo '<a class="fade-image" href="'.get_permalink().'" >';
                     
-                    echo '</div>';
+                    
+
+            if ( function_exists('has_post_thumbnail') && has_post_thumbnail()){
+                         $thumb_id = get_post_thumbnail_id( $post->ID );
+                         $image_thumbnail = wp_get_attachment_image_src( $thumb_id,'full' ); 
+                        echo '<img class="fade-image-a" alt="" src="';
+                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=112&h=112">';
+                        
+                        echo '<img alt="" class="fade-image-b" src="';
+                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=112&h=112&f=2">';
+                        }
+                        
+                    echo '<div class="div_opacity"><table><tbody><tr><td><p>';
+                               echo  get_the_title();
+                    echo '</p></td></tr></tbody></table></div>';
+                    
                     echo '</a>'; 
                     echo '</li>';
                     endwhile; 

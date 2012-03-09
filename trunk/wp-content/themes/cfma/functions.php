@@ -224,52 +224,51 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
     add_action( 'admin_menu' , 'remove_extra_meta_boxes' );   
         
         
-     // Using AJAX  
- /*   
-    // embed the javascript file that makes the AJAX request
-    // don't forget to specify 'json2' as the dependency
-    wp_enqueue_script( 'my-ajax-request', CFMA_LIB . '/js/ajax.js', array( 'jquery', 'json2' ) );
-    // declare the URL to the file that handles the AJAX request (wp-admin/admin-ajax.php)
-    wp_localize_script( 'my-ajax-request', 'MyAjax', array(
-        // URL to wp-admin/admin-ajax.php to process the request
-        'ajaxurl'          => admin_url( 'admin-ajax.php' )
-        )
-    ); 
+        // Newsletter Ajax
+    // echo emailnews_plugin_url('widget/widget.js');
      
-    // this hook is fired if the current viewer is not logged in
-    do_action( 'wp_ajax_nopriv_' . $_REQUEST['action'] );
- 
-    // if logged in:
-    do_action( 'wp_ajax_' . $_POST['action'] );  
+     wp_enqueue_script( 'ajax-newsletter', emailnews_plugin_url('widget/widget.js'), array('jquery')); // jQuery will be included automatically
+    //echo get_bloginfo('template_directory').'/lib/js/ajax.js';
+    wp_localize_script( 'ajax-newsletter', 'ajax_object_newsletter', array( 'ajaxurl_newsletter' => admin_url( 'admin-ajax.php' ) ) ); // setting ajaxurl
     
-    // if both logged in and not logged in users can send this AJAX request,
-    // add both of these actions, otherwise add only the appropriate one
-    add_action( 'wp_ajax_nopriv_myajax-submit', 'myajax_submit' );
-    add_action( 'wp_ajax_myajax-submit', 'myajax_submit' );
- 
-    function myajax_submit() {
-        // get the submitted parameters
-        $year = $_POST['year'];
-     
-        // generate the response
-        $response = json_encode( array( 'success' => true ) );
-     
-        // response output
-        header( "Content-Type: application/json" );
-        echo $response;
-     
-        // IMPORTANT: don't forget to "exit"
-        exit;
+    add_action( 'wp_ajax_ajax_newsletter', 'ajax_action_newsletter' ); // ajax for logged in users
+    add_action( 'wp_ajax_nopriv_ajax_newsletter', 'ajax_action_newsletter' ); // ajax for not logged in users
+    function ajax_action_newsletter() {
+
+        $Email = $_POST['Email'];
+        
+        global $wpdb, $wp_version;
+        define("WP_eemail_TABLE_SUB", $wpdb->prefix . "eemail_newsletter_sub");
+        $cSql = "select * from ".WP_eemail_TABLE_SUB." where eemail_email_sub='" . mysql_real_escape_string(trim($Email)). "'";
+        $data = $wpdb->get_results($cSql);
+        if ( empty($data) ) 
+        {
+        	$sql = "insert into ".WP_eemail_TABLE_SUB.""
+        		. " set `eemail_name_sub` = 'NONAME"
+        		. "', `eemail_email_sub` = '" . mysql_real_escape_string(trim($Email))
+        		. "', `eemail_status_sub` = 'YES"
+        		. "', `eemail_date_sub` = CURDATE()";
+        	
+        	$wpdb->get_results($sql);
+            $result['result'] = "succ"; 
+        	echo "succ";//json_encode($result);
+        }
+        else
+        {
+        	$result['result'] = "exs"; 
+        	echo "exs";//json_encode($result);
+        }
+    	exit;
     }
-
-    wp_enqueue_script( 'json-form' );
-
- */
+    
+    
+    // End  Newsletter Ajax
+        
+     // Using AJAX  
  
     wp_enqueue_script( 'ajax-script', get_bloginfo('template_directory').'/lib/js/ajax.js', array('jquery')); // jQuery will be included automatically
     
     //echo get_bloginfo('template_directory').'/lib/js/ajax.js';
-
     wp_localize_script( 'ajax-script', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) ); // setting ajaxurl
      
     add_action( 'wp_ajax_ajax_action', 'ajax_action_stuff' ); // ajax for logged in users
@@ -320,9 +319,10 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
     	exit;
     }
  
- 
-   
-
     // End Using AJAX  
+
+ 
+    
+    
 
 ?>

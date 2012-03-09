@@ -255,6 +255,10 @@ function wp_load_image( $file ) {
 
 	// Set artificially high because GD uses uncompressed images in memory
 	@ini_set( 'memory_limit', apply_filters( 'image_memory_limit', WP_MAX_MEMORY_LIMIT ) );
+	
+	 //  echo '<pre>';
+     //  print_r($file);
+     //  echo '</pre>';
 	$image = imagecreatefromstring( file_get_contents( $file ) );
 
 	if ( !is_resource( $image ) )
