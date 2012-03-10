@@ -79,10 +79,16 @@
                 'order'=>'DSC'
                 )
             );
-            if (have_posts()) : while (have_posts()): the_post(); 
-                    echo '<li>- '.get_the_title().'</li>';
+                if (have_posts()) : while (have_posts()): the_post();  
+                    echo '<li>';
+                    echo '<a href="'.get_permalink().'" >';
+                    echo '- ';
+                    echo get_the_title();
+                    echo '</a></li>';   
                  endwhile; 
-             endif;
+                else: 
+                    echo __('');
+                endif;
              wp_reset_query();
             ?>         
         </ul>
