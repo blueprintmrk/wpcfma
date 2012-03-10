@@ -20,7 +20,7 @@
     		'description'   => '',
     		'before_widget' => '',
     		'after_widget'  => '',
-    		'before_title'  => '<div class="whiteline21 newsletter"><p>',
+    		'before_title'  => '<div class="whiteline26 newsletter"><p>',
     		'after_title'   => '</p></div>'
     	));
     }

@@ -1,29 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://local.cfma/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="March 10, 2012 8:10 am" -->
+<!-- generated-on="March 10, 2012 1:53 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://local.cfma/</loc>
-		<lastmod>2012-03-02T06:59:40+00:00</lastmod>
+		<lastmod>2012-03-10T13:22:19+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/coiffure-2/</loc>
-		<lastmod>2012-03-10T08:09:35+00:00</lastmod>
+		<loc>http://local.cfma/coiffure/</loc>
+		<lastmod>2012-03-10T13:36:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/coiffure-2/</loc>
+		<lastmod>2012-03-10T13:36:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/bijouterie-joaillerie-orfevrerie/</loc>
+		<lastmod>2012-03-10T13:35:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/beaute/</loc>
+		<lastmod>2012-03-10T13:34:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/art-floral/</loc>
+		<lastmod>2012-03-10T13:33:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/fourrure/</loc>
+		<lastmod>2012-03-10T13:31:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/ameublement/</loc>
+		<lastmod>2012-03-10T13:30:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/cristallerie-verrerie-a-la-main/</loc>
+		<lastmod>2012-03-10T13:29:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/dentelle-broderie/</loc>
+		<lastmod>2012-03-10T13:28:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actualite/a-la-une/</loc>
+		<lastmod>2012-03-10T13:26:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/a-la-une-postsarticles/</loc>
+		<lastmod>2012-03-10T13:16:46+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/contact/adresse/</loc>
+		<lastmod>2012-03-10T12:36:16+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/chiffres-clefs/</loc>
+		<lastmod>2012-03-10T12:35:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actions/evenements/</loc>
+		<lastmod>2012-03-10T12:32:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actions/objectifs/</loc>
+		<lastmod>2012-03-10T12:29:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/membres/adherents/</loc>
+		<lastmod>2012-03-10T12:12:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://local.cfma/newsletter/</loc>
 		<lastmod>2012-03-10T04:27:51+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/coiffure/</loc>
-		<lastmod>2012-03-09T13:37:47+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>http://local.cfma/actualite/presse/</loc>
@@ -40,18 +124,6 @@
 	<url>
 		<loc>http://local.cfma/articles-du-parisien-lart-de-demain-2/</loc>
 		<lastmod>2012-03-05T02:54:06+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actualite/a-la-une/</loc>
-		<lastmod>2012-03-05T02:52:37+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/a-la-une-postsarticles/</loc>
-		<lastmod>2012-03-05T02:51:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -122,60 +194,6 @@
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/membres/adherents/</loc>
-		<lastmod>2012-03-05T02:07:11+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/bijouterie-joaillerie-orfevrerie/</loc>
-		<lastmod>2012-03-03T12:06:54+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/art-floral/</loc>
-		<lastmod>2012-03-03T12:06:07+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/beaute/</loc>
-		<lastmod>2012-03-03T12:05:32+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/ameublement/</loc>
-		<lastmod>2012-03-03T12:05:02+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/fourrure/</loc>
-		<lastmod>2012-03-03T12:04:31+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/cristallerie-verrerie-a-la-main/</loc>
-		<lastmod>2012-03-03T12:03:57+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/dentelle-broderie/</loc>
-		<lastmod>2012-03-03T12:02:35+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actions/objectifs/</loc>
-		<lastmod>2012-03-03T09:58:35+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://local.cfma/contact/demande-dadhesion/</loc>
 		<lastmod>2012-03-02T13:50:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -190,24 +208,6 @@
 	<url>
 		<loc>http://local.cfma/actions/</loc>
 		<lastmod>2012-03-02T06:01:26+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/contact/adresse/</loc>
-		<lastmod>2012-03-01T13:10:05+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/chiffres-clefs/</loc>
-		<lastmod>2012-03-01T12:53:53+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actions/evenements/</loc>
-		<lastmod>2012-03-01T12:50:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
