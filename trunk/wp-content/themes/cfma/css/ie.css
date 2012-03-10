@@ -1,14 +1,4 @@
 
-.simulateur-popup .box-item-list{
-	border-radius: 7px 8px 10px 8px / 7px 8px 10px 8px;
-    behavior: url(PIE.php); 
-   	position: absolute;
-}
-.simulateur-popup .submit-buttom {
-    line-height: 25px;
-	border-radius: 6px 7px 8px 7px / 6px 7px 8px 7px; 
-    behavior: url(PIE.php);   
-}
 
 
 

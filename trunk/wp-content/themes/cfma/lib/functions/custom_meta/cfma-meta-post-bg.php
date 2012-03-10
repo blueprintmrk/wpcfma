@@ -10,7 +10,7 @@
         'fields' => array(
             array(
                 'name' => 'Post Background Image',
-                'desc' => 'Image size : 1024px*640px. Paste the background url here.',
+                'desc' => 'Image size : 1280px*800px. Paste the background url here.',
                 'id' => $prefix . 'bg_upload',
                 'type' => 'upload',
                 'std' => ''

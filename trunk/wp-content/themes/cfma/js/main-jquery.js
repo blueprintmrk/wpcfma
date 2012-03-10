@@ -40,8 +40,8 @@ $(document).ready(function(){
 		$(".nav_menu ul li.menu-no-active").hover(function(e) {
 				$(this)
 					.find('ul')
-					.css('left', '132px')
-					.hoverFlow(e.type, { left: 140 }, 400)
+					.css('left', '165px')
+					.hoverFlow(e.type, { left: 175 }, 400)
 		}, function(e) {
 		}); 
 	// End menu hoverFlow   
@@ -53,9 +53,9 @@ $(document).ready(function(){
 			$('.content_scroll_pane').jScrollPane(
 				{
 					autoReinitialise: true,
-					verticalDragMinHeight: 41,
-					verticalDragMaxHeight: 66,
-					verticalGutter : 18,
+					verticalDragMinHeight: 51,
+					verticalDragMaxHeight: 82,
+					verticalGutter : 22,
 					arrowScrollOnHover : true,
 				}
 			);

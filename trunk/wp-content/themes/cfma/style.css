@@ -67,7 +67,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section { display: bl
 /* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
 
 body { 
-	font: 13px/1.3 'JohnstonITCStd-Light' ,Arial , Georgia, serif; 	
+	font:  14px/1.4  'JohnstonITCStd-Light' ,Arial , Georgia, serif; 	
 /*	background: url("images/header-bg.jpg") repeat-x ; */
 	background-color:#000;
 	color: #FFF;
@@ -76,7 +76,7 @@ body {
 }
 
  * html body { 
-    font: 13px/1.3 'JohnstonITCStd-Light' ,Arial , Georgia, serif; 
+    font:  14px/1.4  'JohnstonITCStd-Light' ,Arial , Georgia, serif; 
     font-weight: normal;
     font-style: normal;
 }
@@ -94,130 +94,129 @@ a{
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover  {text-decoration: none; }
 
-h1, h2, h3, h4	{ font-weight: normal;}
-h1				{ font-size: 22px; margin: 0 0 10px 0; font-weight: bold;}
-h2				{ font-size: 20px; margin: 0 0 0px 0; font-weight: bold;}
-h3				{ font-size: 18px; margin: 0 0 0px 0;font-weight: bold;}
-h4				{ font-size: 16px; margin: 0 0 0px 0;font-weight: bold;}
-h5				{ font-size: 12px; margin: 0 0 0px 0; font-weight: bold;}
-h6				{ font-size: 12px; margin: 0 0 0px 0; font-weight: normal;}
+h1				{ font-size: 24px; margin: 0 0 10px 0; font-weight: bold;}
+h2				{ font-size: 22px; margin: 0 0 0px 0; font-weight: bold;}
+h3				{ font-size: 20px; margin: 0 0 0px 0;font-weight: bold;}
+h4				{ font-size: 18px; margin: 0 0 0px 0;font-weight: bold;}
+h5				{ font-size: 14px; margin: 0 0 0px 0; font-weight: bold;}
+h6				{ font-size: 14px; margin: 0 0 0px 0; font-weight: normal;}
 
 .clear{
 	clear: both;
 }
-small			{ font-size: 11px; line-height: 16px; }
+small			{ font-size: 13px; line-height: 19px; }
 strong			{ color: #fefcfc; font-weight: bold; }
 b				{ font-weight: bold; }
 .bold           { font-weight: bold; }
 .hidden         { display: none; }
 
 .font_face_johnston_light{
-	font: 11px/1.1 'JohnstonITCStd-Light' ,Arial , Georgia, serif;
+	font: 14px/1.4 'JohnstonITCStd-Light' ,Arial , Georgia, serif;
 }
 .font_face_johnston_medium{
-	font: 11px/1.1 'JohnstonITCStd-Medium' ,Arial , Georgia, serif;
+	font: 14px/1.4  'JohnstonITCStd-Medium' ,Arial , Georgia, serif;
 }
 .font_face_penumbra_regular{
-	font: 11px/1.1 'PenumbraFlareStd-Regular' ,Arial , Georgia, serif; 
+	font: 14px/1.4  'PenumbraFlareStd-Regular' ,Arial , Georgia, serif; 
 }
 
 
 /******************************/
 /* white line height*/
-.whiteline12 { /*15*/
-	height:12px;
+.whiteline15 { /*12*/
+	height:15px;
 	/*float:left; */
 	width: 100%;
 }
-.whiteline21{ /* 26 */
-	height:21px;
+.whiteline26{ /* 21 */
+	height:26px;
 	width: 100%;
 }
 
 /****** white  colum  width *****/
-.whitecolumn366 { /* 458 */
-	width:366px;
+.whitecolumn458 { /* 366 */
+	width:458px;
 	float:left; 
 	height: 100%;
 }
-.whitecolumn24{/* 30 */
-	width:24px;
+.whitecolumn30{/* 24 */
+	width:30px;
 	float:left; 
 	height: 100%;
 }
-.whitecolumn58{ /*  72*/
-	width:58px; 
+.whitecolumn72{ /*  58*/
+	width:72px; 
 	float:left; 
 	height: 100%;
 }
-.whitecolumn66{ /*  82*/
-	width:66px;
+.whitecolumn82{ /*  66*/
+	width:82px;
 	float:left; 
 	height: 100%;
 }	
-.whitecolumn16{ /*  20*/
-	width:16px;
+.whitecolumn20{ /*  16*/
+	width:20px;
 	float:left; 
 	height: 100%;
 }
 /*****************************/
 .page_wrap_background{
 	background: url(images/cfma_bg/page-bg.jpg) no-repeat top left; 
-	width: 1024px;
-	height: 640px;
+	width: 1280px;
+	height: 800px;
 	margin: 0 auto;
 }
 .page_wrap{
 	background: url(images/cfma_bg/mask-bg.png) no-repeat top left;
-	width: 1024px;
-	height: 640px;
+	width: 1280px;
+	height: 800px;
 	margin: 0 auto;
 }
 .page_content{
-	width: 1024px;
-	height: 464px;
+	width: 1280px;
+	height: 580px;
 }
 
 .cfma_header_aside{
-	width:497px;
-	height:464px;
+	width:621px;
+	height:580px;
 	/*background-color: green; */
 	float:left;
 }
 .cfma_header_aside .logo{
-	height: 134px;
+	height: 167px;
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 38px;
+	padding-left: 47px;
 }
 
 /**** Css for Menu********/
 .nav_menu{
-	width: 234px;
-	height: 323px; 
+	width: 292px;
+	height: 404px; 
 }
 
 .nav_menu ul{
 	margin-top: 0px;
 	margin-left: 0px;
-	width: 140px;
-	height: 237px;  
-	padding-top: 24px;
+	width: 175px;
+	height: 296px;  
+	padding-top: 30px;
 	list-style:none;
 	text-align: right;
 }
 .nav_menu ul li{
 	display:block;
-	height:18px;	
+	height:23px;	
 	text-align: right;
 	position: relative;
-	padding-top: 21px;
+	padding-top: 26px;
 	position: relative;
 }
 .nav_menu ul li a{
-	font-size: 14px;
-	line-height: 18px;
-	margin-right: 10px;
+	font-size: 17px;
+	line-height: 22px;
+	margin-right: 13px;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -234,24 +233,24 @@ b				{ font-weight: bold; }
 	position:absolute;
 	list-style:none;
 	top: 0px;
-	left:140px;
+	left:175px;
 	background: url(images/menu-border-left.jpg) no-repeat left center;
-	width: 110px;
-	min-height: 70px;
+	width: 138px;
+	min-height: 88px;
 	height: auto;
 	padding: 0px;
 	margin: 0px;
 	display:none; 	
 }
 .nav_menu ul li.menu_active ul{
-   left:140px;   
+   left:175px;   
 }
-.nav_menu ul li:nth-child(1) ul { top: -12px; padding-top: 28px;}
-.nav_menu ul li:nth-child(2) ul { top: -10px; padding-top: 18px;}
-.nav_menu ul li:nth-child(3) ul { top: -3px; padding-top: 7px;}
-.nav_menu ul li:nth-child(4) ul { top: -3px; padding-top: 8px;}
+.nav_menu ul li:nth-child(1) ul { top: -15px; padding-top: 35px;}
+.nav_menu ul li:nth-child(2) ul { top: -13px; padding-top: 23px;}
+.nav_menu ul li:nth-child(3) ul { top: -4px; padding-top: 9px;}
+.nav_menu ul li:nth-child(4) ul { top: -4px; padding-top: 10px;}
 .nav_menu ul li:nth-child(5) ul { top: -0px; padding-top: 1px;}
-.nav_menu ul li:nth-child(6) ul { top: -8px; padding-top: 0px;}
+.nav_menu ul li:nth-child(6) ul { top: -10px; padding-top: 0px;}
 
 .nav_menu ul li:hover ul,
 .nav_menu ul li.menu_active ul{
@@ -259,19 +258,19 @@ b				{ font-weight: bold; }
 }
 
 .nav_menu ul li ul li{
-	margin-left: 9px;
+	margin-left: 11px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 0px;
-	min-height: 10px;
+	min-height: 13px;
 	height: auto;
-	width: 86px;
+	width: 108px;
 	text-align: left;
 }
 .nav_menu ul li ul li a{
-	font-size: 10px;
+	font-size: 12px;
 	color: #FFF;
-	line-height: 13px;
+	line-height: 16px;
 	font-weight: normal;
 }
 
@@ -281,12 +280,12 @@ b				{ font-weight: bold; }
 }
 .nav_menu ul li ul li:hover a, 
 .nav_menu ul li ul li.sub_menu_active a{ 
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
 .nav_menu ul li:nth-child(6){
-	margin-top: 32px;
+	margin-top: 40px;
 }
 .nav_menu ul li:nth-child(6) a{
 	color: #d9c086;
@@ -294,28 +293,28 @@ b				{ font-weight: bold; }
 
 /****End Menus****/
 .main_content{
-	width:526px;
-	height:464px;
+	width:657px;
+	height:580px;
 	float:left;
 	background-color: #151515;
 	opacity: 0.8;
 }
 
 .intranet_form{
-	width: 526px;
-	height:46px;
+	width: 657px;
+	height:57px;
 	font-weight: bold;
 }
 .intranet_form .form_content{
 	float: left;
-	width: 160px;
+	width: 200px;
 	height: 100%;
 	text-align: center;
 
 	
 }
 .intranet_form .form_content .intranet p{
-	font-size: 13px;
+	font-size: 16px;
 	color: #b19243;
 }
 .intranet_form .form_content .newsletter{
@@ -324,28 +323,28 @@ b				{ font-weight: bold; }
 .intranet_form .form_content .newsletter p{
 	position: absolute;
 	bottom: 0px;
-	left: 58px;
-	font-size: 11px;
+	left: 72px;
+	font-size: 14px;
 	color: #ffffff;
 }
 .intranet_form .form_content .intranet_voire_e_mail{ 
-	font-size: 8px;
+	font-size: 10px;
 	color:#a3a3a3;
-	line-height: 11px;
-	height: 11px;
-	width: 66px;
+	line-height: 14px;
+	height: 14px;
+	width: 83px;
 }
 .intranet_form .form_content .div_intranet_submit{
 	position:relative;
 }
 .intranet_form .form_content  .intranet_submit{
 	background-color: #bda167;
-	margin-left:6px;
-	font-size: 9px;
+	margin-left:8px;
+	font-size: 11px;
 	color:#ffffff;
-	line-height: 18px;
-	height: 18px;
-	width: 20px;
+	line-height: 23px;
+	height: 23px;
+	width: 25px;
     border: medium none;
     cursor: pointer;
     text-align: center;
@@ -356,25 +355,25 @@ b				{ font-weight: bold; }
 
 
 .content_body{
-	width: 445px;
-	height: 358px;
-	padding: 40px 61px 19px 21px;
+	width: 556px;
+	height: 447px;
+	padding: 50px 76px 24px 26px;
 	overflow:hidden;
 /*	background-color: green; */
 }
 .content_scroll_pane{
 /*	background-color: #FFF;  */
 	width: 100%;
-	height: 358px;
+	height: 447px;
 	overflow: auto;
 }
 .page-mid-content{
 	width: 100%;
-	min-height: 360px;
+	min-height: 450px;
 }
 .page-mid-content a img{
-    padding-bottom:  10px;
-    padding-right:  10px;
+    padding-bottom:  12px;
+    padding-right:  12px;
 }
 
 
@@ -382,10 +381,10 @@ b				{ font-weight: bold; }
 .t_membres{
 	table-layout: auto;
 	
-    font-size: 15px;
+    font-size: 19px;
 	color: #b19243;
 	text-align:center;
-    line-height: 35px;
+    line-height: 44px;
     page-break-inside: auto;
     width: 99.5%;
 }
@@ -400,43 +399,43 @@ b				{ font-weight: bold; }
 	outline: 0px;
 }
 .content_scroll_pane p{
-	font-size: 13px;
-	line-height: 15px;
+	font-size: 20px;
+	line-height: 24px;
 	color: #ffffff;
 	margin-bottom: 1px;
 	margin-top: 1px;
 }
 .cfma_sliders{
-	width: 1024px;
-	height: 134px;
+	width: 1280px;
+	height: 167px;
 	background-color: #000000;
 }
 .cfma_sliders ul li a{
     text-decoration: none;
-    width: 112px;
-	height: 112px;
+    width: 140px;
+	height: 140px;
     border: none;  
 }
 .cfma_sliders ul li{
     list-style: none;
-	width: 112px;
-	height: 112px;
+	width: 140px;
+	height: 140px;
 }
 
 .cfma_sliders ul li .post_img_thumbnail{ 
-    width: 112px;
-	height: 112px;
+    width: 140px;
+	height: 140px;
 }
 
 .cfma_sliders ul li .div_height{
-	height: 76px;
+	height: 95px;
     background: none;
 }
 .cfma_sliders ul li .div_opacity{
 	background-color: #000000;
 	opacity: 0.8;
-	width: 112px;
-	height: 36px;
+	width: 140px;
+	height: 45px;
 	text-align: center;
 /*	display: table-cell;
 	vertical-align: middle;*/
@@ -444,16 +443,16 @@ b				{ font-weight: bold; }
 }
 .cfma_sliders ul li .div_opacity p{
 /*	font: 12px 'PenumbraFlareStd-Regular' ,Arial , Georgia, serif; */
-	font-size: 10px;
+	font-size: 12px;
 	text-transform: uppercase;	
 	color: #ffffff;
-	line-height:10px;
-	padding-left: 8px;
-	padding-right: 8px;
+	line-height:12px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .cfma_footer{
-	width: 1024px;
-	height: 45px;
+	width: 1280px;
+	height: 56px;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
@@ -465,26 +464,26 @@ b				{ font-weight: bold; }
     
 }
 .cfma_footer ul {
-    font-size: 10px;
+    font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;	
 	color: #d9c086; 
 }
 .cfma_footer ul li a{
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;	
 	color: #d9c086;
 
 }
 .cfma_footer ul li a:after {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     content: " . ";
 }
 .cfma_footer ul li:last-child a:after {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     content: "";
 }
 
@@ -496,20 +495,20 @@ b				{ font-weight: bold; }
 }
 .page-mid-content .ul_list_posts .li_post{
 	width: 100%;
-	height: 72px;
-	margin-bottom: 10px;
+	height: 90px;
+	margin-bottom: 12px;
 	overflow: hidden;
 }
 .ul_list_posts .li_post a{
 	text-decoration:underline;
 }
 .ul_list_posts .li_post p{
-	font-size: 10px;
-	line-height: 12px;
+	font-size: 12px;
+	line-height: 15px;
 }
 .ul_list_posts .li_post img {
 	float: left;
-	margin-right: 5px;
+	margin-right: 6px;
 }
 
 /*****End Actions *******/
@@ -519,26 +518,26 @@ b				{ font-weight: bold; }
 /***** Contact *******/
 .contact_form ,
 .contact_form p{
-	font-size: 11px;
-	line-height: 14px;
+	font-size: 14px;
+	line-height: 17px;
 	color: #FFFFFF;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 6px;
+	margin-top: 6px;
 }
 .contact_form  .wpcf7-submit {
 	background: url(images/contact_submit_img.jpg) top left repeat-x;
-	height: 20px;
-	width: 97px;
+	height: 25px;
+	width: 121px;
 	color: #ffffff;
-	font-size: 11px;
+	font-size: 14px;
 	cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     border:  1px solid #665a3c;
-    margin-top:  7px;
+    margin-top:  9px;
 }
 .contact_form input {
-    font-size: 11px;
+    font-size: 14px;
 	background-color: #FFF;
 	border: none;
 }
@@ -548,35 +547,35 @@ b				{ font-weight: bold; }
 	height: auto;
 }
 .contact_form_left{
-	width: 190px;
-	height: 270px;
+	width: 237px;
+	height: 337px;
 }
 .contact_form_left table{
 	text-align: right;
 	vertical-align:middle;
 }
 .contact_form_left table tr{
-   height: 22px; 
+   height: 27px; 
 }
 .contact_form_left table input {
-    font-size: 11px;
-	height: 11px;
-	width: 115px;
-	line-height: 11px;
+    font-size: 14px;
+	height: 14px;
+	width: 144px;
+	line-height: 14px;
 }
 
 
 .contact_form_right{
-	margin-left: 16px;
-	width: 214px;
-	height: 270px;
+	margin-left: 20px;
+	width: 267px;
+	height: 337px;
 }
 
 .contact_form_right textarea {
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
-    padding: 5px 8px;
+    padding: 6px 10px;
 	background-color: #FFF;
 	border: none;
 }
@@ -584,22 +583,22 @@ b				{ font-weight: bold; }
 .contact_form_bottom{
 	width: 100%;
 	height: auto;
-	min-height: 40px;
-	margin-top: 16px;
+	min-height: 50px;
+	margin-top: 20px;
 }
 .contact_form_bottom table{
 	text-align: right;
 	vertical-align:middle;
 }
 .contact_form_bottom table p{
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .contact_form_bottom table input {
-    font-size: 11px;
-	height: 11px;
-	width: 87px;
-	line-height: 11px;
+    font-size: 14px;
+	height: 14px;
+	width: 109px;
+	line-height: 14px;
 }
 
 /*****End Contact *******/
@@ -610,7 +609,7 @@ b				{ font-weight: bold; }
 }
 .ul_presse_list li{
 	display: inline-block;
-	margin: 8px 19px 8px 0px;
+	margin: 10px 24px 10px 0px;
 	
 }
 
@@ -620,17 +619,17 @@ b				{ font-weight: bold; }
 .page-mid-content .ul_articles li{
 	list-style:none;
 	text-align:left;
-	font-size: 12px;
-	line-height: 24px;
+	font-size: 15px;
+	line-height: 30px;
 }
 .page-mid-content .ul_annee li{
 	text-align:center;
 }
 .page-mid-content .ul_mois li{
-	padding-left:15px;
+	padding-left:19px;
 }
 .page-mid-content  .ul_articles li{
-	padding-left:20px;
+	padding-left:25px;
 }
 .page-mid-content ul li.text_title{
 	text-align:center;
@@ -639,22 +638,22 @@ b				{ font-weight: bold; }
 	padding: 0px;
 }
 .page-mid-content  .ul_annee{
-	width: 64px;
-	min-height: 315px;
-	margin-right: 9px;
+	width: 80px;
+	min-height: 394px;
+	margin-right: 11px;
 	border: 1px solid #2d2819;	
 }
 .page-mid-content  .ul_mois{
-	width: 80px;
-	min-height: 315px;
-	margin-right: 9px;
+	width: 100px;
+	min-height: 394px;
+	margin-right: 11px;
 	border: 1px solid #2d2819;
 }
 
 .page-mid-content .ul_articles{
-	width: 242px;
-	min-height: 315px;
-	margin-right: 9px;
+	width: 302px;
+	min-height: 394px;
+	margin-right: 11px;
 	border: 1px solid #2d2819;
 }
 
@@ -691,13 +690,13 @@ table.demande_dinformations tr th{
 }
 table.demande_dinformations label ,
 table.demande_dinformations p {
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 30px;
 }
 table.demande_dinformations input{
-    font-size:  12px;
-    height:  14px;
-    line-height:  14px;
+    font-size:  15px;
+    height:  18px;
+    line-height:  18px;
     background-color: #ffffff;
     border: medium none;
     width:  90%;
@@ -707,26 +706,26 @@ table.demande_dinformations tr td{
 }
 table.demande_dinformations input.wpcf7-submit {
 	background: url(images/contact_submit_img.jpg) top left repeat-x;
-	height: 20px;
-	width: 97px;
+	height: 25px;
+	width: 121px;
 	color: #ffffff;
-	font-size: 11px;
+	font-size: 14px;
 	cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     border:  1px solid #665a3c;
-    margin-top:  7px;
+    margin-top:  9px;
 }
 table.demande_dinformations  textarea {
     width:  90%;
-    margin-top: 4px;
+    margin-top: 5px;
     
 }
 
 
 #pre_eemail_msg{
-    width: 555px; 
-    min-height: 10px; 
+    width: 694px; 
+    min-height: 12px; 
  /*   position: absolute; 
     top:  30%; 
     left:  21%; */
@@ -755,8 +754,8 @@ table.demande_dinformations  textarea {
 .cfma_sliders .fade-image {
 	display: block;
 	position: relative;
-	width: 112px;
-	height: 112px;
+	width: 140px;
+	height: 140px;
 	}
  
 .cfma_sliders .fade-image-a,
@@ -780,7 +779,7 @@ table.demande_dinformations  textarea {
     z-index: 6;
    	position: absolute;
 	left: 0;
-	top: 76px;
+	top: 95px;
 }
 .cfma_sliders .fade-image .div_opacity table{
     table-layout: auto;
