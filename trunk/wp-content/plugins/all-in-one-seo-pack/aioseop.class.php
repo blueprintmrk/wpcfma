@@ -228,7 +228,7 @@ class All_in_One_SEO_Pack {
 			}
 		}
 		
-		echo "\n<!-- All in One SEO Pack $this->version by Michael Torbert of Semper Fi Web Design";
+		echo "\n<!-- All in One SEO Pack $this->version";
 		if ($this->ob_start_detected) {
 			echo "ob_start_detected ";
 		}
@@ -1454,179 +1454,7 @@ function aiosp_google_analytics(){
 	<div class="wrap">
 		
 		<h2><?php _e('All in One SEO Plugin Options', 'all_in_one_seo_pack'); ?></h2>
-		by <strong>Michael Torbert</strong> of <strong>Semper Fi Web Design</strong>
-		<p>
-			<div style="float:left;">
-			
-		<?php //_e("This is version ", 'all_in_one_seo_pack') ?><?php //_e("$this->version ", 'all_in_one_seo_pack') ?>
-&nbsp;<a target="_blank" title="<?php _e('All in One SEO Plugin Release History', 'all_in_one_seo_pack')?>"
-href="http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/all-in-one-seo-pack-release-history/"><?php _e("Changelog", 'all_in_one_seo_pack')?>
-</a>
-| <a target="_blank" title="<?php _e('FAQ', 'all_in_one_seo_pack') ?>"
-href="http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/all-in-one-seo-faq/"><?php _e('FAQ', 'all_in_one_seo_pack') ?></a>
-| <a target="_blank" title="<?php _e('All in One SEO Plugin Support Forum', 'all_in_one_seo_pack') ?>"
-href="http://semperfiwebdesign.com/forum/"><?php _e('Support', 'all_in_one_seo_pack') ?></a>
-| <a target="_blank" title="<?php _e('All in One SEO Plugin Translations', 'all_in_one_seo_pack') ?>"
-href="http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/translations-for-all-in-one-seo-pack/"><?php _e('Translations', 'all_in_one_seo_pack') ?></a>
-| <strong><a target="_blank" title="<?php _e('Pro Version', 'all_in_one_seo_pack') ?>"
-href="http://wpplugins.com/plugin/50/all-in-one-seo-pack-pro-version"><?php _e('UPGRADE TO PRO VERSION', 'all_in_one_seo_pack') ?></a></strong>
-</div>
-
-<div style="width:600px;margin-top:40px;">
-	<form action="http://semperfiwebdesign.us1.list-manage.com/subscribe/post?u=794674d3d54fdd912f961ef14&amp;id=af0a96d3d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-		<span>Join our mailing list for tips, tricks, and WordPress secrets.<br /><em><strong>Sign up today and receive a free copy of the e-book 5 SEO Tips for WordPress</strong></em> ($39 value).</span>
-		<div>
-	<label for="mce-EMAIL">Email Address </label>
-	<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-
 		
-			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
-			</div>
-	</form>
-	</div>
-	<div style="clear:both;">
-
-<br />
-<!--<div style="width:75%;background-color:yellow;">
-<em>Thank you for using <strong>All in One SEO Pack</strong> by <strong>Michael Torbert</strong> of <strong>Semper Fi Web Design</strong>.  If you like this plugin and find it useful, feel free to click the <strong>donate</strong> button or send me a gift from my <strong>Amazon wishlist</strong>.  Also, don't forget to follow me on <strong>Twitter</strong>.</em>
-</div>
--->
-<!--
-<a target="_blank" title="<?php //echo 'Donate' ?>"
-href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mrtorbert%40gmail%2ecom&item_name=All%20In%20One%20SEO%20Pack&item_number=Support%20Open%20Source&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8"><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" width="" alt="Donate" /><?php //echo 'Donate' ?></a>
-| <a target="_blank" title="Amazon Wish List" href="https://www.amazon.com/wishlist/1NFQ133FNCOOA/ref=wl_web"><img src="https://images-na.ssl-images-amazon.com/images/G/01/gifts/registries/wishlist/v2/web/wl-btn-74-b._V46774601_.gif" width="74" alt="My Amazon.com Wish List" height="42" border="0" /></a>
-| <a target="_blank" title="<?php //_e('Follow us on Twitter', 'all_in_one_seo_pack') ?>"
-href="http://twitter.com/michaeltorbert/"><img src="<?php //echo WP_PLUGIN_URL; ?>/all-in-one-seo-pack/images/twitter.png" alt="<?php //_e('Follow Us on Twitter', 'all_in_one_seo_pack') ?>" height="47px" /></a>
--->
-</p>
-
-<div style="width:905px;">
-	<div style="float:left;background-color:white;padding: 10px 10px 10px 10px;margin-right:15px;border: 1px solid #ddd;height:200px;margin-bottom:2px;">
-		<div style="width:423px;height:130px;">
-			<h3>Donate</h3>
-			<em>If you like this plugin and find it useful, help keep this plugin free and actively developed by clicking the <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mrtorbert%40gmail%2ecom&item_name=All%20In%20One%20SEO%20Pack&item_number=Support%20Open%20Source&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8" target="_blank"><strong>donate</strong></a> button or send me a gift from my <a href="https://www.amazon.com/wishlist/1NFQ133FNCOOA/ref=wl_web" target="_blank"><strong>Amazon wishlist</strong></a>.  Also, don't forget to follow me on <a href="http://twitter.com/michaeltorbert/" target="_blank"><strong>Twitter</strong></a>.</em>
-		</div>
-		<a target="_blank" title="<?php echo 'Donate' ?>"
-	href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mrtorbert%40gmail%2ecom&item_name=All%20In%20One%20SEO%20Pack&item_number=Support%20Open%20Source&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8">
-		<img src="<?php echo WP_PLUGIN_URL; ?>/all-in-one-seo-pack/images/donate.jpg" alt="<?php _e('Donate with Paypal', 'all_in_one_seo_pack') ?>" />	</a>
-		<a target="_blank" title="Amazon Wish List" href="https://www.amazon.com/wishlist/1NFQ133FNCOOA/ref=wl_web">
-		<img src="<?php echo WP_PLUGIN_URL; ?>/all-in-one-seo-pack/images/amazon.jpg" alt="<?php _e('My Amazon Wish List', 'all_in_one_seo_pack') ?>" /> </a>
-		<a target="_blank" title="<?php _e('Follow us on Twitter', 'all_in_one_seo_pack') ?>" href="http://twitter.com/michaeltorbert/">
-		<img src="<?php echo WP_PLUGIN_URL; ?>/all-in-one-seo-pack/images/twitter.jpg" alt="<?php _e('Follow Us on Twitter', 'all_in_one_seo_pack') ?>" />	</a>
-	</div>
-
-
-<div style="clear:both;">
-	<div style="float:left;background-color:white;padding:10px;border:1px solid #ddd;height:200px;margin-right:15px;">
-		<div style="width:423px;height:130px"> 
-		<h3>Drag and Drop WordPress Design</h3>
-		<p><a href="http://semperfiwebdesign.com/headwayaio/" target="_blank">Headway Themes</a> allows you to easily create your own stunning website designs! Stop using premade themes start making your own design with Headway's easy to use Drag and Drop interface. All in One SEO Pack users have an exclusive discount by using coupon code <strong>SEMPERFI30</strong> at checkout.</p>
-	</div>
-	<a href="http://semperfiwebdesign.com/headwayaio/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/all-in-one-seo-pack/images/headwaybanner.png"></a>
-	</div>
-
-	<div style="float:left;background-color:white;padding:10px;border:1px solid #ddd;height:200px;">
-	<div style="width:423px;height:130px;">
-	<h3>Reliable WordPress Hosting</h3>
-	<p><a title="WebHostingHub.com" target="_blank"
-	href="http://ref.webhostinghub.com/scripts/click.php?ref_id=rsuog2&ad_id=54c8d95f">WebHostingHub.com</a>
-	is a true leader in WordPress hosting and configured for WordPress
-	blogs. Hub's account includes UNLIMITED Hosting, NO-DOWNTIME Transfer,
-	24/7 U.S. Support & 90-Day FULL Money Back.<br />
-	Check our <a title="WebHostingHub reviews" target="_blank"
-	href="http://webhostingrating.com/companies/web-hosting-hub/">customer
-	reviews</a> at WebHostingRating.com.</p>
-	</div>
-	<a title="WebHostingHub.com" target="_blank"
-	href="http://ref.webhostinghub.com/scripts/click.php?ref_id=rsuog2&ad_id=54c8d95f"><img
-	src="http://webhostingrating.com/images/hub_420_wordpress.png"
-	alt="WebHostingHub.com" width="420" height="53" border="0" /></a>
-	</div>
-</div>
-
-<div style="clear:both;">
-
-<div style="float:left;background-color:white;padding:10px 10px 10px 10px;border:1px solid #ddd;margin-right:15px;margin-top:2px"> 
-		<div style="width:423px;height:130px"> 
-		<h3>Secure your WordPress Blog with WebsiteDefender.com</h3>
-		<p><a href="http://www.websitedefender.com">WebsiteDefender.com</a> is an online service that checks your WordPress blog by checking for malware, security vulnerabilities and hacker activity. Don’t take the risk of getting blacklisted by Google.
-			<strong><a href="https://dashboard.websitedefender.com/register-for-free-website-scan.php">Sign up for FREE</a> and keep your blog safe!</strong></p>
-	</div>
-	<a href="http://www.websitedefender.com/wordpress-security-with-websitedefender/" target="_blank"><img src="http://www.websitedefender.com/adverts/WD_wordpress_450x50.gif" alt="Sign up for a free WebsiteDefender account and secure your WordPress blog"></a>
-</div>
-
-
-	<div style="float:left;background-color:white;padding:10px 10px 10px 10px;border:1px solid #ddd;margin-top:2px"> 
-	<div style="width:423px;height:130px;">
-		<h3>Awesome WordPress Hosting</h3>
-		<a title="GreenGeeks.com" target="_blank"
-		href="http://www.greengeeks.com/cgi-bin/affiliates/clickthru.cgi?id=allin1seo&page=1">GreenGeeks.com</a>
-		the world's #1 most eco-friendly web host, provides Awesome WordPress Hosting! 99.9% Uptime Guarantee. 24x7x365 Customer Support. FREE SITE MIGRATION. 30 day money back guarantee. Find out why we're Awesome! 877-ECO-SITE / 877-326-7483.
-		<br />
-		Get $30 OFF when you order. Use Coupon code: <strong>ALLIN1SEO</strong>.
-	</div>
-	<a title="GreenGeeks" target="_blank"
-	href="http://www.greengeeks.com/cgi-bin/affiliates/clickthru.cgi?id=allin1seo&page=1"><img
-	src="http://www.greengeeks.com/images/mktg/420x53-greengeeks-wordpress.png"
-	alt="GreenGeeks" width="420" height="53" border="0" /></a>	
-	</div>
-</div>
-	
-	
-
-
-<!--
-	<div style="float:left;background-color:white;padding: 10px 10px 10px 10px;border: 1px solid #ddd;">
-		<div style="width:365px;height:130px;">
-			
-			<form action="http://semperfiwebdesign.us1.list-manage.com/subscribe/post?u=794674d3d54fdd912f961ef14&amp;id=af0a96d3d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-				<span>Join our mailing list for tips, tricks, and WordPress secrets. Also receive discounts on top commercial plugins and themes.<br /><em><strong>Sign up today and receive a free copy of the e-book 5 SEO Tips for WordPress</strong></em>.</span>
-			<div class="mc-field-group">
-			<label for="mce-EMAIL">Email Address </label>
-			<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-			</div>
-				
-					<div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-			</form>
-</div>
-</div>
--->
-<div style="clear:both";></div>
-<!--
-<p>
-<?php
-//$canwrite = $this->is_upgrade_directory_writable();
-//$canwrite = false;
-?>
-<form class="form-table" name="dofollow" action="" method="post">
-<p class="submit">
-<input type="submit" <?php //if (!$canwrite) echo(' disabled="disabled" ');?> name="aiosp_upgrade" value="<?php //_e('One Click Upgrade', 'all_in_one_seo_pack')?> &raquo;" />
-<strong><?php //_e("(Remember: Backup early, backup often!)", 'all_in_one_seo_pack') ?></strong>
-</form>
-</p>
-<p></p>
-
-
-<?php //if (!$canwrite) {
-	//echo("<p><strong>"); echo(sprintf(__("Please make sure that %s is writable.", 'all_in_one_seo_pack'), $this->upgrade_folder)); echo("</p></strong>");
-// } ?>
-</p>
--->
-
-<script type="text/javascript">
-<!--
-    function toggleVisibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
-
-<h3><?php _e('Click on option titles to get help!', 'all_in_one_seo_pack') ?></h3>
-
 <?php
 function aioseop_mrt_df(){
 	
@@ -1780,23 +1608,6 @@ if(!get_option('aioseop_options')){
 <form name="dofollow" action="" method="post">
 <table class="form-table">
 <?php $aioseop_options = get_option('aioseop_options'); ?>
-<?php if (!$aioseop_options['aiosp_donate']){?>
-<tr>
-<th scope="row" style="text-align:right; vertical-align:top;">
-<a style="cursor:pointer;" title="<?php _e('Click for Help!', 'all_in_one_seo_pack')?>" onclick="toggleVisibility('aiosp_donate_tip');">
-<?php _e('I enjoy this plugin and have made a donation:', 'all_in_one_seo_pack'); ?>
-</a>
-</td>
-<td>
-<input type="checkbox" name="aiosp_donate" <?php if ($aioseop_options['aiosp_donate']) echo "checked=\"1\""; ?>/>
-<div style="max-width:500px; text-align:left; display:none" id="aiosp_donate_tip">
-<?php
-_e('All donations support continued development of this free software.', 'all_in_one_seo_pack');
- ?>
-</div>
-</td>
-</tr>
-<?php } ?>
 
 <tr>
 <th scope="row" style="text-align:right; vertical-align:top;">
@@ -2384,21 +2195,7 @@ _e('Check this and SEO pack will create a log of important events (all_in_one_se
 </td>
 </tr>
 
-<?php if ($aioseop_options['aiosp_donate']){?>
-<tr>
-<th scope="row" style="text-align:right; vertical-align:top;">
-<a style="cursor:pointer;" title="<?php _e('Click for Help!', 'all_in_one_seo_pack')?>" onclick="toggleVisibility('aiosp_donate_tip');">
-<?php _e('Thank you for your donation:', 'all_in_one_seo_pack')?>
-</a>
-</td>
-<td>
-<input type="checkbox" name="aiosp_donate" <?php if ($aioseop_options['aiosp_donate']) echo "checked=\"1\""; ?>/>
-<div style="max-width:500px; text-align:left; display:none" id="aiosp_donate_tip">
-<?php _e('All donations support continued development of this free software.', 'all_in_one_seo_pack'); ?>
-</div>
-</td>
-</tr>
-<?php } ?>
+
 
 </table>
 <p class="submit">
@@ -2412,11 +2209,6 @@ _e('Check this and SEO pack will create a log of important events (all_in_one_se
 </p>
 <?php } ?>
 
-<p><br />
-<strong><?php _e('Check out these other great plugins!','all_in_one_seo_pack'); ?></strong><br />
-<a href="http://semperfiwebdesign.com/custom-applications/sms-text-message/" title="SMS Text Message WordPress plugin">SMS Text Message</a> - <?php _e('sends SMS updates to your readers','all_in_one_seo_pack'); ?><br />
-<a href="http://semperfiwebdesign.com/custom-applications/wp-security-scan/" title="WordPress Security">WordPress Security Scan</a> - <?php _e('provides vital security for your WordPress site','all_in_one_seo_pack'); ?>
-</p>
 </form>
 </div>
 <?php
