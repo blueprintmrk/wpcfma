@@ -1,6 +1,6 @@
 <!-- Begin intranet_form-->
 <div class="intranet_form"> 
-	<div class="whitecolumn366">&nbsp;</div>  
+	<div class="whitecolumn420">&nbsp;</div>  
     <div class="form_content">
         <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('cfma_newsletter_widget')) : ?>
             
