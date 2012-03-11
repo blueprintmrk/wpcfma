@@ -774,7 +774,7 @@ table.demande_dinformations  textarea {
 	}
  
 .cfma_sliders .fade-image-a,
-.cfma_sliders .fade-image b {
+.cfma_sliders .fade-image-b {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -795,7 +795,6 @@ table.demande_dinformations  textarea {
 	-webkit-transition: opacity .25s ease-in-out;*/
 }	
 .cfma_sliders .fade-image-a:hover {
-    z-index: 4;
     
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; 
     filter: alpha(opacity=0);
