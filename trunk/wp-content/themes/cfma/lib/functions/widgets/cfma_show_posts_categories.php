@@ -62,11 +62,11 @@ class  gold_show_posts_categories extends WP_Widget {
             if ( function_exists('has_post_thumbnail') && has_post_thumbnail()){
                          $thumb_id = get_post_thumbnail_id( $post->ID );
                          $image_thumbnail = wp_get_attachment_image_src( $thumb_id,'full' ); 
-                        echo '<img class="fade-image-a" alt="" src="';
-                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140">';
+                        echo '<img class="fade-image-a" width="140px" height="140px" alt="" src="';
+                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140"/>';
                         
-                        echo '<img alt="" class="fade-image-b" src="';
-                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140&f=2">';
+                        echo '<img alt="" class="fade-image-b" width="140px" height="140px" src="';
+                        echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140&f=2"/>';
                         }
                         
                     echo '<div class="div_opacity"><table><tbody><tr><td><p>';
