@@ -52,11 +52,13 @@ $(document).ready(function(){
 		{
 			$('.content_scroll_pane').jScrollPane(
 				{
-					autoReinitialise: true,
-					verticalDragMinHeight: 51,
-					verticalDragMaxHeight: 82,
+				//	autoReinitialise: true,
+					verticalDragMinHeight: 48,
+					verticalDragMaxHeight: 48,
 					verticalGutter : 22,
-					arrowScrollOnHover : true,
+				//	arrowScrollOnHover : true,
+				    showArrows: true,
+                    verticalArrowPositions: 'after',
 				}
 			);
 		});

@@ -56,23 +56,17 @@ class  gold_show_posts_categories extends WP_Widget {
                    	
                     echo '<li>';
                     echo '<a class="fade-image" href="'.get_permalink().'" >';
-                    
-                    
-
             if ( function_exists('has_post_thumbnail') && has_post_thumbnail()){
                          $thumb_id = get_post_thumbnail_id( $post->ID );
                          $image_thumbnail = wp_get_attachment_image_src( $thumb_id,'full' ); 
-                        echo '<img class="fade-image-a" width="140px" height="140px" alt="" src="';
+                        echo '<img class="fade-image-a" width="140" height="140" alt="" src="';
                         echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140"/>';
-                        
-                        echo '<img alt="" class="fade-image-b" width="140px" height="140px" src="';
+                        echo '<img class="fade-image-b" width="140" height="140" alt="" src="';
                         echo   get_bloginfo('template_url').'/lib/functions/timthumb/timthumb.php?src='.$image_thumbnail[0].'&w=140&h=140&f=2"/>';
                         }
-                        
                     echo '<div class="div_opacity"><table><tbody><tr><td><p>';
                                echo  get_the_title();
                     echo '</p></td></tr></tbody></table></div>';
-                    
                     echo '</a>'; 
                     echo '</li>';
                     endwhile; 
