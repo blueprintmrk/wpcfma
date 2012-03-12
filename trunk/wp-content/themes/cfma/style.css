@@ -417,17 +417,21 @@ b				{ font-weight: bold; }
 	width: 1280px;
 	height: 167px;
 	background-color: #000000;
+    list-style: none;
+}
+.cfma_sliders ul li{
+    float: left;
+    list-style: none;
+	width: 140px;
+	height: 140px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .cfma_sliders ul li a{
     text-decoration: none;
     width: 140px;
 	height: 140px;
     border: none;  
-}
-.cfma_sliders ul li{
-    list-style: none;
-	width: 140px;
-	height: 140px;
 }
 
 .cfma_sliders ul li .post_img_thumbnail{ 
