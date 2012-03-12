@@ -58,7 +58,7 @@
 {
 	background-color: none;
 	position: relative;
-	background: url(../images/jscrollpane_skin/scroll_line_bg02.png) no-repeat  bottom center;
+	background: url(../images/jscrollpane_skin/scroll_line_bg01.png) no-repeat  bottom center;
 	width: 9px;
 }
 .jspDrag
@@ -83,7 +83,7 @@
 
 .jspArrow
 {
-	background: none;
+/*	background: none; */
 	text-indent: -20000px;
 	display: block;
 	cursor: pointer;
@@ -92,14 +92,22 @@
 .jspArrow.jspDisabled
 {
 	cursor: default;
-	background: #80808d;
+/*	background: #80808d; */
 }
 
 .jspVerticalBar .jspArrow
 {
-	height: 51px;
+	height: 17px;
+    
 }
-
+.jspVerticalBar .jspArrowUp
+{
+    background: url(../images/jscrollpane_skin/jsp_arrow_up.png) no-repeat  bottom center;
+}
+.jspVerticalBar .jspArrowDown
+{
+    background: url(../images/jscrollpane_skin/jsp_arrow_down.png) no-repeat  bottom center;
+}
 .jspHorizontalBar .jspArrow
 {
 	width: 16px;
