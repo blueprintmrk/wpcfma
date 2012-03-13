@@ -69,16 +69,16 @@ $(document).ready(function(){
    
     //<!-- End Jcarousel -->
     
-    
-    
-    // Using Ajax
-   
-    //End Using Ajax
-    
-    
-    
-    
-    
+    //  the picture move up a little bit
+
+    $(".cfma_sliders .fade-image").mouseover(function(){  
+        $(this).find('img').animate({top:"-5px"},"fast","linear");
+	});  
+  
+	$(".cfma_sliders .fade-image").mouseout(function(){  
+	   $(this).find('img').animate({top:"0px"},"fast","linear");
+	});  
+
     
          
 });

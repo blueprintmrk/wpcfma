@@ -214,9 +214,9 @@ function eemail_widget($args)
 	{
 		extract($args);
 		echo $before_widget;
-		echo $before_title;
-		echo get_option('eemail_title');
-		echo $after_title;
+	//	echo $before_title;
+	//	echo get_option('eemail_title');
+	//	echo $after_title;
 		eemail_show();
 		echo $after_widget;
 	}

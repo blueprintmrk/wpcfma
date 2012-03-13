@@ -4,13 +4,15 @@
 -->
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo emailnews_plugin_url('widget/widget.css'); ?>" />
 
-
+    <div class="whiteline26 newsletter"><p></p></div>
     <div id="pre_eemail_msg">     
         <div id="eemail_msg" class="eemail_msg" ></div> 
     </div>
 
     <div class="clear"></div>
-    <div class="whitecolumn75 intranet"><p><?php echo get_option('eemail_widget_cap'); ?></p></div>
+    <div class="whitecolumn95 intranet"><p><?php echo get_option('eemail_widget_cap'); ?></p></div>
+    
+     <div class="whitecolumn95 newsletter"><p><?php echo get_option('eemail_title'); ?></p></div>
 
     <div class="whitecolumn103">
         <input class="eemail_textbox_class intranet_voire_e_mail" 
