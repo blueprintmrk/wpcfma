@@ -267,7 +267,7 @@ b				{ font-weight: bold; }
 	padding-top: 0px;
 	min-height: 13px;
 	height: auto;
-	width: 108px;
+	width: 122px;
 	text-align: left;
 }
 .nav_menu ul li ul li a{
@@ -445,11 +445,11 @@ b				{ font-weight: bold; }
 .cfma_sliders ul li .div_opacity{
 	background-color: #000000;
     
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-      filter: alpha(opacity=80);
-      -moz-opacity: 0.8;
-      -khtml-opacity: 0.8;
-      opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+      -khtml-opacity: 0.5;
+      opacity: 0.5;
 
 	width: 140px;
 	height: 45px;
