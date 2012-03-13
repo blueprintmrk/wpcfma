@@ -12,7 +12,7 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
     add_filter( 'pre_site_transient_update_core', create_function( '$a', "return null;" ) );
     remove_action( 'load-update-core.php', 'wp_update_themes' );
     add_filter( 'pre_site_transient_update_themes', create_function( '$a', "return null;" ) );
-    
+
     // Load jQuery
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');

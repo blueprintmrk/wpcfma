@@ -20,8 +20,8 @@
     		'description'   => '',
     		'before_widget' => '',
     		'after_widget'  => '',
-    		'before_title'  => '<div class="whiteline26 newsletter"><p>',
-    		'after_title'   => '</p></div>'
+    		'before_title'  => '',
+    		'after_title'   => ''
     	));
     }
     
