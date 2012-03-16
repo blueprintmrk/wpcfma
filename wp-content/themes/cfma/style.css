@@ -812,6 +812,7 @@ table.demande_dinformations  textarea {
 }
 .cfma_sliders .fade-image .fade_image_up {
     top: -5px;
+	text-decoration:none;
 }
     
     
