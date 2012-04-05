@@ -18,10 +18,12 @@
         <input class="eemail_textbox_class intranet_voire_e_mail" 
         name="eemail_txt_email" 
         id="eemail_txt_email"  
+        onblur="if(this.value=='') this.value='<?php echo get_option('eemail_widget_txt_cap'); ?>';" 
+        onfocus="if(this.value=='<?php echo get_option('eemail_widget_txt_cap'); ?>') this.value='';"
         value="<?php echo get_option('eemail_widget_txt_cap'); ?>" 
      
         type="text" 
-        maxlength="40" />
+        maxlength="240" />
             
     </div>
     <input type="hidden" id="testurl" value="<?php echo emailnews_plugin_url('widget'); ?>" />
