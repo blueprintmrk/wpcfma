@@ -1,129 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://local.cfma/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="April 5, 2012 6:40 am" -->
+<!-- generated-on="April 6, 2012 2:24 am" -->
+<!-- Debug: Total comment count: 0 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://local.cfma/</loc>
-		<lastmod>2012-03-13T10:59:17+00:00</lastmod>
+		<lastmod>2012-03-27T02:34:17+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
+<!-- Debug: Start Postings -->
 	<url>
-		<loc>http://local.cfma/actualite/archives-newsletter/</loc>
-		<lastmod>2012-03-29T11:52:51+00:00</lastmod>
+		<loc>http://local.cfma/actions/lobbying/</loc>
+		<lastmod>2012-04-06T02:24:02+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/presentation/histoire/</loc>
+		<lastmod>2012-04-05T11:18:25+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 856: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/ganterie-de-peau/</loc>
+		<lastmod>2012-04-05T10:04:17+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/newsletter/</loc>
+		<lastmod>2012-04-05T09:29:04+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actions/videos/</loc>
+		<lastmod>2012-04-05T08:00:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://local.cfma/membres/partenariats/</loc>
-		<lastmod>2012-03-13T04:59:03+00:00</lastmod>
+		<lastmod>2012-04-04T14:07:24+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-	<url>
-		<loc>http://local.cfma/coiffure/</loc>
-		<lastmod>2012-03-10T13:36:39+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/coiffure-2/</loc>
-		<lastmod>2012-03-10T13:36:35+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/bijouterie-joaillerie-orfevrerie/</loc>
-		<lastmod>2012-03-10T13:35:23+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/beaute/</loc>
-		<lastmod>2012-03-10T13:34:16+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/art-floral/</loc>
-		<lastmod>2012-03-10T13:33:23+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/fourrure/</loc>
-		<lastmod>2012-03-10T13:31:41+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/ameublement/</loc>
-		<lastmod>2012-03-10T13:30:35+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/cristallerie-verrerie-a-la-main/</loc>
-		<lastmod>2012-03-10T13:29:13+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/dentelle-broderie/</loc>
-		<lastmod>2012-03-10T13:28:19+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actualite/a-la-une/</loc>
-		<lastmod>2012-03-10T13:26:01+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
+<!-- Debug: Priority report of postID 262: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/a-la-une-postsarticles/</loc>
-		<lastmod>2012-03-10T13:16:46+00:00</lastmod>
+		<lastmod>2012-04-04T14:02:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/contact/adresse/</loc>
-		<lastmod>2012-03-10T12:36:16+00:00</lastmod>
+		<loc>http://local.cfma/membres/adherents/</loc>
+		<lastmod>2012-04-03T09:30:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
+<!-- Debug: Priority report of postID 597: Comments: 0 of 0 = 0 points -->
 	<url>
-		<loc>http://local.cfma/chiffres-clefs/</loc>
-		<lastmod>2012-03-10T12:35:18+00:00</lastmod>
+		<loc>http://local.cfma/maroquinerie/</loc>
+		<lastmod>2012-03-30T12:26:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actualite/archivesnewsletter/</loc>
+		<lastmod>2012-03-29T16:29:39+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 540: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/ameublement-2/</loc>
+		<lastmod>2012-03-29T08:03:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/membres/bureau/</loc>
+		<lastmod>2012-03-27T11:51:17+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://local.cfma/actions/evenements/</loc>
-		<lastmod>2012-03-10T12:32:18+00:00</lastmod>
+		<lastmod>2012-03-27T10:47:36+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/actions/objectifs/</loc>
-		<lastmod>2012-03-10T12:29:41+00:00</lastmod>
+		<loc>http://local.cfma/chiffres-clefs/</loc>
+		<lastmod>2012-03-27T10:46:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/membres/adherents/</loc>
-		<lastmod>2012-03-10T12:12:55+00:00</lastmod>
+		<loc>http://local.cfma/actions/commissions/</loc>
+		<lastmod>2012-03-26T13:32:11+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/newsletter/</loc>
-		<lastmod>2012-03-10T04:27:51+00:00</lastmod>
+		<loc>http://local.cfma/actualite/agenda/</loc>
+		<lastmod>2012-03-26T12:24:09+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actualite/a-la-une/</loc>
+		<lastmod>2012-03-26T10:02:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actualite/</loc>
+		<lastmod>2012-03-26T09:42:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 571: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/bottier/</loc>
+		<lastmod>2012-03-26T09:01:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/contact/adresse/</loc>
+		<lastmod>2012-03-23T17:27:04+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 199: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/cristallerie-verrerie-a-la-main/</loc>
+		<lastmod>2012-03-23T17:24:44+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 203: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/dentelle-broderie/</loc>
+		<lastmod>2012-03-23T17:08:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 196: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/fourrure/</loc>
+		<lastmod>2012-03-23T17:04:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 189: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/beaute/</loc>
+		<lastmod>2012-03-23T17:02:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 186: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/art-floral/</loc>
+		<lastmod>2012-03-23T16:59:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 183: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/bijouterie-joaillerie-orfevrerie/</loc>
+		<lastmod>2012-03-23T16:44:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 390: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/coiffure/</loc>
+		<lastmod>2012-03-23T16:42:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 591: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/haute-couture/</loc>
+		<lastmod>2012-03-23T16:32:15+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 601: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/vitrail/</loc>
+		<lastmod>2012-03-23T16:20:07+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/mentions-legales/</loc>
+		<lastmod>2012-03-20T09:49:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/plan-du-site/</loc>
+		<lastmod>2012-03-20T09:46:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
 		<loc>http://local.cfma/actualite/presse/</loc>
-		<lastmod>2012-03-06T06:53:54+00:00</lastmod>
+		<lastmod>2012-03-13T12:00:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 488: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualites-diverses-3/</loc>
+		<lastmod>2012-03-13T11:15:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 485: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualites-diverses-2/</loc>
+		<lastmod>2012-03-13T11:09:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 482: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualite-diverse/</loc>
+		<lastmod>2012-03-13T11:04:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 478: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualites-diverses/</loc>
+		<lastmod>2012-03-13T11:01:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 475: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualite-fiscale-3/</loc>
+		<lastmod>2012-03-13T10:51:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 472: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualite-fiscale-2/</loc>
+		<lastmod>2012-03-13T10:50:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 469: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actualite-fiscale/</loc>
+		<lastmod>2012-03-13T10:48:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 454: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://local.cfma/actu-oseo/</loc>
+		<lastmod>2012-03-13T10:43:56+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://local.cfma/actions/objectifs/</loc>
+		<lastmod>2012-03-13T10:06:40+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -133,75 +283,73 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
+<!-- Debug: Priority report of postID 260: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/articles-du-parisien-lart-de-demain-2/</loc>
 		<lastmod>2012-03-05T02:54:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 258: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/artistes-chinois-vs-artistes-coreens-2/</loc>
 		<lastmod>2012-03-05T02:36:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 253: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/la-coiffure-dans-la-nature-2/</loc>
 		<lastmod>2012-03-05T02:35:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 216: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/conference-sur-lart-armenien/</loc>
 		<lastmod>2012-03-05T02:35:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-	<url>
-		<loc>http://local.cfma/sed-quaenam-ea-sit-audite-patres/</loc>
-		<lastmod>2012-03-05T02:34:47+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
+<!-- Debug: Priority report of postID 250: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/art-floral-et-decoration-dinterieur-2/</loc>
 		<lastmod>2012-03-05T02:33:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 218: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/art-floral-et-decoration-dinterieur/</loc>
 		<lastmod>2012-03-05T02:30:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 221: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/la-coiffure-dans-la-nature/</loc>
 		<lastmod>2012-03-05T02:30:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 224: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/artistes-chinois-vs-artistes-coreens/</loc>
 		<lastmod>2012-03-05T02:30:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 229: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/articles-du-parisien-lart-de-demain/</loc>
 		<lastmod>2012-03-05T02:30:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
+<!-- Debug: Priority report of postID 232: Comments: 0 of 0 = 0 points -->
 	<url>
 		<loc>http://local.cfma/conference-sur-lart-armenien-2/</loc>
 		<lastmod>2012-03-05T02:30:11+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/lam-summus-pater-architectus-deus-hanc/</loc>
-		<lastmod>2012-03-05T02:29:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -224,62 +372,14 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/membres/bureau/</loc>
-		<lastmod>2012-03-01T12:03:28+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/presentation/histoire/</loc>
-		<lastmod>2012-03-01T11:45:07+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/mentions-legales/</loc>
-		<lastmod>2012-03-01T10:26:11+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/plan-du-site/</loc>
-		<lastmod>2012-03-01T10:25:39+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actualite/agenda/</loc>
-		<lastmod>2012-03-01T07:01:47+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://local.cfma/actualite/appels-doffres/</loc>
 		<lastmod>2012-03-01T07:01:30+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://local.cfma/actualite/</loc>
-		<lastmod>2012-03-01T07:00:42+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
 		<loc>http://local.cfma/contact/</loc>
 		<lastmod>2012-03-01T06:59:36+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actions/lobbing/</loc>
-		<lastmod>2012-03-01T06:58:33+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://local.cfma/actions/commisions/</loc>
-		<lastmod>2012-03-01T06:58:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -295,4 +395,9 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
+<!-- Debug: End Postings -->
+<!-- Debug: Start Custom Pages -->
+<!-- Debug: End Custom Pages -->
+<!-- Debug: Start additional URLs -->
+<!-- Debug: End additional URLs -->
 </urlset>
