@@ -12,7 +12,14 @@ if(@$_POST['send']=="true")
 	@$eemail_id = $_POST['eemail_subject_drop'];
 	@$emailrecord = array();
 	@$emailrecord = eemail_get_email_content($eemail_id);
-	@$subject = $emailrecord["eemail_subject"];
+    
+    
+    @$new_email_subject = $_POST['new_eemail_subject'];
+    if(@$new_email_subject==""){
+            @$subject = $emailrecord["eemail_subject"];
+        }else{
+            @$subject = @$new_email_subject;    
+        }
 	@$mail_content = $emailrecord["eemail_content"];
 	
 	@$recipients = $send_users;
@@ -77,19 +84,30 @@ foreach ( $data as $data )
 }
 }
 ?>
-    <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <table width="90%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td><h3>Select the email subject and send:</h3></td>
       </tr>
       <tr>
-        <td>Subject :
-          <select name="eemail_subject_drop" id="eemail_subject_drop">
+        <td align="left" valign="middle">Subject :
+          <select name="eemail_subject_drop" id="eemail_subject_drop"         style="width:200px;">
             <option value="">Select email subject</option>
             <?php echo $eemail_subject_drop_val; ?>
           </select>
           <br />
           <br />
-          <input type="submit" name="Submit" class="button-primary" value="Send email" /></td>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="middle">Enter new email subject : <input name="new_eemail_subject" type="text" id="new_eemail_subject" value="" style="width:70%;"/></td>
+        <br />
+        <br />
+      </tr>
+
+      <tr><td><input type="submit" name="Submit" class="button-primary" value="Send email" /></td>   
+      <br />
+      <br />
       </tr>
       <tr>
         <td></td>

@@ -62,8 +62,13 @@ echo '&nbsp;On Search:&nbsp;<input  style="width: 100px;" type="text" value="';
 echo $eemail_on_search . '" name="eemail_on_search" id="eemail_on_search" maxlength="3" /></p>';
 echo '<p>On Archives:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  style="width: 100px;" type="text" value="';
 echo $eemail_on_archives . '" name="eemail_on_archives" id="eemail_on_archives" maxlength="3" /></p>';
- echo '<br><p>Short description:<br><input  style="width: 300px;" type="text" value="';
- echo $eemail_widget_cap . '" name="eemail_widget_cap" id="eemail_widget_cap" maxlength="300" /></p>';
+
+
+ echo '<br><p>Short description:<br>
+ <textarea  style="width: 70%;" name="eemail_widget_cap" id="eemail_widget_cap"  rows="1" cols="50">';
+  echo $eemail_widget_cap . '</textarea></p>';
+ 
+ 
 echo '<p>Text box caption:<br><input  style="width: 300px;" type="text" value="';
 echo $eemail_widget_txt_cap . '" name="eemail_widget_txt_cap" id="eemail_widget_txt_cap" /></p>';
 echo '<p>Button caption:<br><input  style="width: 300px;" type="text" value="';
