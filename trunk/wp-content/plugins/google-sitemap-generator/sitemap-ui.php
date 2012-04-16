@@ -288,54 +288,6 @@ class GoogleSitemapGeneratorUI {
 			?></p></strong></div><?php
 		}
 		
-		
-		if(!$snl) {
-		
-			if(isset($_GET['sm_hidedonate'])) {
-				$this->sg->SetOption('i_hide_donated',true);
-				$this->sg->SaveOptions();
-			}
-			if(isset($_GET['sm_donated'])) {
-				$this->sg->SetOption('i_donated',true);
-				$this->sg->SaveOptions();
-			}
-			if(isset($_GET['sm_hide_note'])) {
-				$this->sg->SetOption('i_hide_note',true);
-				$this->sg->SaveOptions();
-			}
-			if(isset($_GET['sm_hidedonors'])) {
-				$this->sg->SetOption('i_hide_donors',true);
-				$this->sg->SaveOptions();
-			}
-			if(isset($_GET['sm_hide_works'])) {
-				$this->sg->SetOption('i_hide_works',true);
-				$this->sg->SaveOptions();
-			}
-			
-			
-			if(isset($_GET['sm_donated']) || ($this->sg->GetOption('i_donated')===true && $this->sg->GetOption('i_hide_donated')!==true)) {
-				?>
-				<div class="updated">
-					<strong><p><?php _e('Thank you very much for your donation. You help me to continue support and development of this plugin and other free software!','sitemap'); ?> <a href="<?php echo $this->sg->GetBackLink() . "&amp;sm_hidedonate=true"; ?>"><small style="font-weight:normal;"><?php _e('Hide this notice', 'sitemap'); ?></small></a></p></strong>
-				</div>
-				<?php
-			} else if($this->sg->GetOption('i_donated') !== true && $this->sg->GetOption('i_install_date')>0 && $this->sg->GetOption('i_hide_note')!==true && time() > ($this->sg->GetOption('i_install_date') + (60*60*24*30))) {
-				?>
-				<div class="updated">
-					<strong><p><?php echo str_replace("%s",$this->sg->GetRedirectLink("sitemap-donate-note"),__('Thanks for using this plugin! You\'ve installed this plugin over a month ago. If it works and you are satisfied with the results, isn\'t it worth at least a few dollar? <a href="%s">Donations</a> help me to continue support and development of this <i>free</i> software! <a href="%s">Sure, no problem!</a>','sitemap')); ?> <a href="<?php echo $this->sg->GetBackLink() . "&amp;sm_donated=true"; ?>" style="float:right; display:block; border:none; margin-left:10px;"><small style="font-weight:normal; "><?php _e('Sure, but I already did!', 'sitemap'); ?></small></a> <a href="<?php echo $this->sg->GetBackLink() . "&amp;sm_hide_note=true"; ?>" style="float:right; display:block; border:none;"><small style="font-weight:normal; "><?php _e('No thanks, please don\'t bug me anymore!', 'sitemap'); ?></small></a></p></strong>
-					<div style="clear:right;"></div>
-				</div>
-				<?php
-			} else if($this->sg->GetOption('i_install_date')>0 && $this->sg->GetOption('i_hide_works')!==true && time() > ($this->sg->GetOption('i_install_date') + (60*60*24*15))) {
-				?>
-				<div class="updated">
-					<strong><p><?php echo str_replace("%s",$this->sg->GetRedirectLink("sitemap-works-note"),__('Thanks for using this plugin! You\'ve installed this plugin some time ago. If it works and your are satisfied, why not <a href="%s">rate it</a> and <a href="%s">recommend it</a> to others? :-)','sitemap')); ?> <a href="<?php echo $this->sg->GetBackLink() . "&amp;sm_hide_works=true"; ?>" style="float:right; display:block; border:none;"><small style="font-weight:normal; "><?php _e('Don\'t show this anymore', 'sitemap'); ?></small></a></p></strong>
-					<div style="clear:right;"></div>
-				</div>
-				<?php
-			}
-		}
-		
 		if(function_exists("wp_next_scheduled")) {
 			$next = wp_next_scheduled('sm_build_cron');
 			if($next) {
@@ -713,10 +665,6 @@ class GoogleSitemapGeneratorUI {
 								echo "<li>" . str_replace("%s",wp_nonce_url($this->sg->GetBackLink() . "&sm_rebuild=true&noheader=true",'sitemap'),__('If you changed something on your server or blog, you should <a href="%s">rebuild the sitemap</a> manually.','sitemap')) . "</li>";
 							}
 							echo "<li>" . str_replace("%d",wp_nonce_url($this->sg->GetBackLink() . "&sm_rebuild=true&sm_do_debug=true",'sitemap'),__('If you encounter any problems with the build process you can use the <a href="%d">debug function</a> to get more information.','sitemap')) . "</li>";
-
-							if(version_compare($wp_version,"2.9",">=") && version_compare(PHP_VERSION,"5.1",">=")) {
-								echo "<li class='sm_hint'>" . str_replace("%s",$this->sg->GetRedirectLink('sitemap-info-beta'), __('There is a new beta version of this plugin available which supports the new multi-site feature of WordPress as well as many other new functions! <a href="%s">More information and download</a>','sitemap')) . "</li>";
-							}
 							?>
 
 						</ul>

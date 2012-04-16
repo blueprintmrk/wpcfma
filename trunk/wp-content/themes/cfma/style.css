@@ -250,10 +250,10 @@ b				{ font-weight: bold; }
 }
 .nav_menu ul li:nth-child(1) ul { top: -15px; padding-top: 35px;}
 .nav_menu ul li:nth-child(2) ul { top: -13px; padding-top: 23px;}
-.nav_menu ul li:nth-child(3) ul { top: -4px; padding-top: 9px;}
+.nav_menu ul li:nth-child(3) ul { top: -4px; padding-top: 3px;}
 .nav_menu ul li:nth-child(4) ul { top: -4px; padding-top: 10px;}
 .nav_menu ul li:nth-child(5) ul { top: -0px; padding-top: 1px;}
-.nav_menu ul li:nth-child(6) ul { 
+.nav_menu ul li:nth-child(6) ul {
     top: -35px;
     padding-top: 0px;
     background: url(images/menu-border-left02.jpg) no-repeat left center;
