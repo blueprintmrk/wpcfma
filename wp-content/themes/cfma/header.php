@@ -4,8 +4,9 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<title>
+    <?php wp_title(''); ?>
 		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
+		  /*    if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
 		         wp_title(''); echo ' Archive - '; }
@@ -25,7 +26,7 @@
 		          bloginfo('name'); }
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
-		   ?>
+		  */ ?>
 	</title>
     <!--[if lte IE 8]>
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
