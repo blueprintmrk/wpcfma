@@ -21,10 +21,16 @@
 
     // Add meta box
     function cfma_page_bg_add_box() { //mytheme_add_box
-        
         global $page_meta_box;
-        add_meta_box($page_meta_box['id'], $page_meta_box['title'], 'cfma_page_bg_show_box', $page_meta_box['page'], $page_meta_box['context'], $page_meta_box['priority']);
-        add_action('save_post', 'cfma_page_bg_save_data');
+        $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+        $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+         // check for a template type
+    	if ($template_file != 'page-newsletter.php')
+    	{
+            add_meta_box($page_meta_box['id'], $page_meta_box['title'], 'cfma_page_bg_show_box', $page_meta_box['page'], $page_meta_box['context'], $page_meta_box['priority']);
+        }
+    	// add a callback function to save any data a user enters in
+    	add_action('save_post', 'cfma_page_bg_save_data');
     }
      // Callback function to show fields in meta box
     function cfma_page_bg_show_box() { 

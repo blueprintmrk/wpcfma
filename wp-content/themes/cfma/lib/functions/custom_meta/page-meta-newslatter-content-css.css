@@ -1,0 +1,132 @@
+.admin_media_meta_control { }
+
+.admin_media_meta_control .style_element_header_wrap{
+    background: #AAAAAA;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: auto;
+    line-height: 35px;
+    overflow: hidden;
+    padding-left: 10px;
+    position: relative;
+    text-shadow: 1px -1px 0 #999999;
+    width: 98%;
+}
+
+
+.admin_media_meta_control .div_media_meta_box_title{
+  width:  100%;
+  min-height:10px;
+}
+.admin_media_meta_control .div_media_meta_box_content{
+    width:  100%;
+}
+.admin_media_meta_control .div_media_meta_box_content table{
+    width:  100%;
+    table-layout: auto;
+    text-align: left;
+    vertical-align: bottom;
+}
+.admin_media_meta_control .div_media_meta_box_content table tr,
+.admin_media_meta_control .div_media_meta_box_content table td{
+    table-layout: auto;
+    
+}
+.admin_media_meta_control .div_media_meta_box_content table input,
+.admin_media_meta_control .div_media_meta_box_content table label{
+    margin-right: 10px;
+}
+.admin_media_meta_control .div_media_meta_box_content table label{
+}
+.admin_media_meta_control .div_media_meta_box_content table td{
+    height: 50px;
+}
+.admin_media_meta_control  .div_media_meta_box_button{
+    width:  100%;
+    margin-top: 15px;
+}
+.admin_media_meta_control  .div_media_meta_box_button .dynamical_add_elements_select{
+    float:left;
+    width:300px;
+    margin-right: 10px;
+}
+.admin_media_meta_control  .div_media_meta_box_button .add_message{
+    width:98%;
+    margin-left: 10px;
+    min-height: 12px;
+    height: auto;
+    color: green;
+    display: none;
+}
+.admin_media_meta_control  .div_media_meta_box_button input.button_dynamical_add_content{
+    background:  #5C951E;
+    border: 1px solid #5C951E;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    outline: medium none;
+    padding: 6px 17px;
+    text-decoration: none;
+    text-shadow: 1px -1px 0 #5C951E;
+}
+/*
+.admin_media_meta_control  .div_media_meta_box_button input{
+    float:left;
+    width:200px;
+    margin-right: 10px;
+    color: red;
+}*/
+.admin_media_meta_control .upload_img_button,
+.admin_media_meta_control .delete_img_button{
+    background: #5C951E;
+    border: 1px solid #5C951E;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    outline: medium none;
+    text-decoration: none;
+    text-shadow: 1px -1px 0 #5C951E;
+}
+
+.admin_media_meta_control  table .elementtitle{
+    background: #AAAAAA;
+    border: 4px solid #E1E1E1;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: auto;
+    line-height: 35px;
+    padding-left: 10px;
+    text-shadow: 1px -1px 0 #999999;
+}
+.admin_media_meta_control  table .elestyle{
+    padding-left: 10px;
+}
+
+.admin_media_meta_control  table .bordertopbottom{
+    border-top: 4px solid #E1E1E1;
+    border-bottom: 4px solid #E1E1E1;
+}
+.admin_media_meta_control  table .borderright{
+    border-right: 4px solid #E1E1E1;
+}
+.admin_media_meta_control  table .itemsize{
+    width: 270px;
+}
+.admin_media_meta_control  table .itemverticalbottom{
+    vertical-align: bottom;
+    text-align: right;
+    margin-right: 1px;
+}
+.admin_media_meta_control  table input.delete_img_button{
+    margin-right: 1px;
+}
+
+

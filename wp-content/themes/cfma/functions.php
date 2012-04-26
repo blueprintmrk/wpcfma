@@ -1,12 +1,15 @@
 <?php
 $themename="cfma";   
 
-define('CFMA_LIB', TEMPLATEPATH . '/lib');  
-
+define('CFMA_LIB', str_replace("\\",'/',TEMPLATEPATH) . '/lib');
 define('CFMA_FUNCTIONS', CFMA_LIB . '/functions');
-
 define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
 
+define('CFMA_THEME_FOLDER',str_replace("\\",'/',TEMPLATEPATH));
+define('CFMA_THEME_PATH','/' . substr(CFMA_THEME_FOLDER,stripos(CFMA_THEME_FOLDER,'wp-content')));
+define('CFMA_THEME_PATH_LIB', CFMA_THEME_PATH . '/lib');
+define('CFMA_THEME_PATH_FUNCTIONS', CFMA_THEME_PATH_LIB . '/functions');
+define('CFMA_THEME_PATH_WIDGETS', CFMA_THEME_PATH_LIB . '/functions/widgets');
 
     // turn off update wordpress
     add_filter( 'pre_site_transient_update_core', create_function( '$a', "return null;" ) );
@@ -41,8 +44,42 @@ define('CFMA_WIDGETS', CFMA_LIB . '/functions/widgets');
 		);
 	}
     
+    
+    // for custom meta
+    function newsletter_meta_clean(&$arr)
+    {
+    	if (is_array($arr))
+    	{
+    		foreach ($arr as $i => $v)
+    		{
+    			if (is_array($arr[$i])) 
+    			{
+    				newsletter_meta_clean($arr[$i]);
+     
+    				if (!count($arr[$i])) 
+    				{
+    					unset($arr[$i]);
+    				}
+    			}
+    			else 
+    			{
+    				if (trim($arr[$i]) == '') 
+    				{
+    					unset($arr[$i]);
+    				}
+    			}
+    		}
+     
+    		if (!count($arr)) 
+    		{
+    			$arr = NULL;
+    		}
+    	}
+    }
+    
     require_once(CFMA_FUNCTIONS . '/custom_meta/cfma-meta-page-bg.php');
     require_once(CFMA_FUNCTIONS . '/custom_meta/cfma-meta-post-bg.php');
+    require_once(CFMA_FUNCTIONS . '/custom_meta/page-meta-newslatter.php');
     require_once(CFMA_WIDGETS . '/cfma_show_posts_categories.php');
     require_once(CFMA_WIDGETS . '/widgets.php');
     
