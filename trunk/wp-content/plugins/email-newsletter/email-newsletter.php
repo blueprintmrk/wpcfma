@@ -260,6 +260,11 @@ function add_admin_menu_email_to_subscriber() {
 	include_once("email-to-subscriber.php");
 }
 
+function add_admin_menu_email_to_subscriber_v2() {
+	global $wpdb;
+	include_once("email-to-subscriber-v2.php");
+}
+
 function add_admin_menu_view_subscriber() {
 	global $wpdb;
 	include_once("view-subscriber.php");
@@ -282,6 +287,7 @@ function add_admin_menu_option()
 //	add_submenu_page('email-newsletter', 'Send email to registered user', 'Send email to registered user', 'administrator', 'add_admin_menu_email_to_registered_user', 'add_admin_menu_email_to_registered_user');
 //	add_submenu_page('email-newsletter', 'Send email to comments posed user', 'Send email to comments posed user', 'administrator', 'add_admin_menu_email_to_comment_posed_user', 'add_admin_menu_email_to_comment_posed_user');
 	add_submenu_page('email-newsletter', 'Send mail to subscribed user', 'Send mail to subscribed user', 'administrator', 'add_admin_menu_email_to_subscriber', 'add_admin_menu_email_to_subscriber');
+    add_submenu_page('email-newsletter', 'Send mail to subscribed user v2', 'Send mail to subscribed user v2', 'administrator', 'add_admin_menu_email_to_subscriber_v2', 'add_admin_menu_email_to_subscriber_v2');
 //	add_submenu_page('email-newsletter', 'Send mail to simple contact form emails', 'Send mail to simple contact form emails', 'administrator', 'add_admin_menu_email_to_simple_contact_form', 'add_admin_menu_email_to_simple_contact_form');
 	add_submenu_page('email-newsletter', 'View subscribed user', 'View subscribed user', 'administrator', 'add_admin_menu_view_subscriber', 'add_admin_menu_view_subscriber');
 	add_submenu_page('email-newsletter', 'Subscriber form setting', 'Subscriber form setting', 'administrator', 'add_admin_menu_widget_option', 'add_admin_menu_widget_option');
