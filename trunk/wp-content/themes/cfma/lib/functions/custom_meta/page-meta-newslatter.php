@@ -126,6 +126,7 @@
             switch ($values1["elamenttype"]){
     	       case 'titleonleft':
                     if($values1["title"]!=''){
+                        $values1["title"] = strip_tags($values1["title"]);
                         newsletter_meta_save_ifgot($post_id,$values1,$key_number);
                         $key_number++;
                     }

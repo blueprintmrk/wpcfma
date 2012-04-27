@@ -56,7 +56,7 @@ jQuery(document).ready(function() {
                     content___ += '<label class="elestyle">Text input:</label>';
                     content___ += '</td>';
                     content___ += '<td class="bordertopbottom">';
-                    content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="5" width="25%"></textarea>';
+                    content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="10" width="25%"></textarea>';
                     content___ += '</td>';
                     content___ += '<td class="bordertopbottom">';
                         content___ += '<label>Text align</label><br />';
@@ -84,7 +84,7 @@ jQuery(document).ready(function() {
                          content___ += '<tr>';
                             content___ += '<td><label class="elestyle">Text input:</label></td>';
                             content___ += '<td>';
-                                content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="5"></textarea>';
+                                content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="10"></textarea>';
                             content___ += '</td>';
                             content___ += '<td>';
                                 content___ += '<label>Text align</label><br />';
@@ -124,7 +124,7 @@ jQuery(document).ready(function() {
                          content___ += '<tr>';
                             content___ += '<td><label class="elestyle">Text input:</label></td>';
                             content___ += '<td>';
-                                content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="5"></textarea>';
+                                content___ += '<textarea class="itemsize" type="text" name="newslettermeta['+(num_count)+'][blocktext]" class="" cols="40" rows="10"></textarea>';
                             content___ += '</td>';
                             content___ += '<td>';
                                 content___ += '<label>Text align</label><br />';
