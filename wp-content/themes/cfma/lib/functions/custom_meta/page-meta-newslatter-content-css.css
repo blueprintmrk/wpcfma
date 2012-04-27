@@ -118,7 +118,7 @@
     border-right: 4px solid #E1E1E1;
 }
 .admin_media_meta_control  table .itemsize{
-    width: 270px;
+    width: 350px;
 }
 .admin_media_meta_control  table .itemverticalbottom{
     vertical-align: bottom;
@@ -128,5 +128,7 @@
 .admin_media_meta_control  table input.delete_img_button{
     margin-right: 1px;
 }
-
+.newsletter_img_ex{
+    margin: 0 auto;
+}
 

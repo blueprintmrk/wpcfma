@@ -1,6 +1,9 @@
 <div class='wrap'>
   <?php
 include_once("inc/button.php");
+include_once("customemail/newsletter_style.php");
+include_once("customemail/newsletter_mail_class.php");
+
 if(@$_POST['send']=="true") 
 {
 	get_currentuserinfo();
@@ -21,8 +24,8 @@ if(@$_POST['send']=="true")
             @$subject = @$new_email_subject;    
         }
     //  $mail_content with template.
-	@$mail_content = $emailrecord->post_content;
-	
+    //@$mail_content = $emailrecord->post_content;
+    @$mail_content = newsletter_template01($eemail_id,$_classes);
 	@$recipients = $send_users;
 	@$num_sent = eemail_send_mail($recipients, $subject, $mail_content, $mail_format, $from_name, $from_address);
 	?>
@@ -47,10 +50,10 @@ $col=3;
 $count = 0;
 
 ?>
+<!--
 <td>    <input type="checkbox" name="eemail_checked[]" value="cuong@86solutions.com" checked="checked" class="radio"/>
-    &nbsp;cuong@86solutions.com    </td>
+    &nbsp;cuong@86solutions.com    </td>-->
 <?php
-/*
 foreach ( $data as $data )
 {
 	$to = $data->eemail_email_sub;
@@ -75,7 +78,6 @@ foreach ( $data as $data )
 		$count = $count + 1;
 	}
 }
-*/
 echo "</tr></table>";
 }
 ?>

@@ -50,8 +50,8 @@ function eemail_install()
 	add_option('eemail_on_search', "NO");
 	add_option('eemail_on_archives', "NO");
 	
-	add_option('eemail_from_name', "noreply");
-	add_option('eemail_from_email', "noreply@mysitename.com");
+	add_option('eemail_from_name', "CFMA");
+	add_option('eemail_from_email', "q.beluche@cfmart.fr");
 	
 	if($wpdb->get_var("show tables like '". WP_eemail_TABLE . "'") != WP_eemail_TABLE)  
 	{

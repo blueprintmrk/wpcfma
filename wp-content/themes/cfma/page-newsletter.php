@@ -5,8 +5,8 @@
  *
  */
  ?>
-<?php get_header(); 
-    the_post(); 
+<?php get_header();
+    the_post();
 ?>
 <div class="page_wrap_newsletter">   
     <?php  include(TEMPLATEPATH . '/lib/includes/page_content_newsletter.php');?>

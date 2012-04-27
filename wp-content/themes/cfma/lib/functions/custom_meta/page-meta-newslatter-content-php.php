@@ -1,19 +1,18 @@
 <div class="admin_media_meta_control">
 
 <div class="div_media_meta_box_title">
-    <img class="newsletter_img_ex" width="496" height="640" alt="image" src="<?php echo CFMA_THEME_PATH ?>/images/custom_newsletter_meta/newsletter.jpg"/>
+    <img class="newsletter_img_ex" width="496" alt="image" src="<?php echo get_bloginfo('template_url'); ?>/images/custom_newsletter_meta/newsletter.jpg"/>
 </div>
 <div class="div_media_meta_box_content">
     <table id="media_meta_table_top" cellpadding="0" cellspacing="0"><tbody>
     <tr><td colspan="3"><h1>Top option: </h1></td></tr>
 <?php
     echo '<tr>';
-    
         echo '<td>';
         echo '<label>Top Right Text :</label>';
         echo '</td>';
         echo '<td colspan="2">';
-        echo '<input type="text" name="newslettermetatoptext" value="'.stripslashes($newslettermetatoptext).'"  size="70%" />';
+        echo '<input type="text" name="newslettermetatoptext" value="'.strip_tags(stripslashes($newslettermetatoptext)).'"  size="70%" />';
         echo '</td>';
     echo '</tr>';
           
@@ -73,7 +72,7 @@ if(!empty($meta)) {
                         echo '<label class="elestyle">Title input:</label>';
                     echo '</td>';
                     echo '<td class="bordertopbottom">';
-                        echo '<input class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][title]" value="'.stripslashes($custom_media_code1["title"]).'"/>';
+                        echo '<input class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][title]" value="'.strip_tags(stripslashes($custom_media_code1["title"])).'"/>';
                     echo '</td>';
                     echo '<td class="bordertopbottom">';
                     echo '</td>';
@@ -95,7 +94,7 @@ if(!empty($meta)) {
                         echo '<label class="elestyle">Text input:</label>';
                     echo '</td>';
                     echo '<td class="bordertopbottom">';
-                        echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="5">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
+                        echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="10">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
                     echo '</td>';
                     echo '<td class="bordertopbottom">';
                             echo '<label>Text align</label><br />';
@@ -126,7 +125,7 @@ if(!empty($meta)) {
                          echo '<tr>';
                             echo '<td><label class="elestyle">Text input:</label></td>';
                             echo '<td>';
-                                echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="5">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
+                                echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="10">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
                             echo '</td>';
                             echo '<td>';
                                 echo '<label>Text align</label><br />';
@@ -169,7 +168,7 @@ if(!empty($meta)) {
                          echo '<tr>';
                             echo '<td><label class="elestyle">Text input:</label></td>';
                             echo '<td>';
-                                echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="5">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
+                                echo '<textarea class="itemsize" type="text" name="newslettermeta['.$num_tmp.'][blocktext]" class="" cols="40" rows="10">'.stripslashes($custom_media_code1["blocktext"]).'</textarea>';
                             echo '</td>';
                             echo '<td>';
                                 echo '<label>Text align</label><br />';
@@ -254,54 +253,48 @@ if(!empty($meta)) {
                 }
                 break;
         }
-
-       /*
-	   if($custom_media_code1["mediatype"]=='image'&&$custom_media_code1["link"]!=''){
-	       echo '<tr>';
-            echo '<td>';
-            echo '<label>Image :</label>';
-            echo '</td>';
-            echo '<td>';
-            echo '<input type="text" name="newslettermeta['.$num_tmp.'][link]" value="'.stripslashes($custom_media_code1["link"]).'" id="_media_meta_'.$num_tmp.'" size="50%" />';
-            echo '<input type="hidden" name="newslettermeta['.$num_tmp.'][mediatype]" value="image"/>';
-            echo '</td>';
-            echo '<td>';
-            echo '<input class="upload_img_button"  id="_media_meta_'.$num_tmp.'" type="button" value="Upload Image" />';
-            echo '</td>';
-            echo '<td>';
-            echo '<input class="delete_img_button" type="button" value="Delete" onClick="jQuery(this).parent().parent().remove();"/>';
-            echo '</td>';
-          echo '</tr>';
-        $num_tmp++;
-      }else if($custom_media_code1["mediatype"]=='video'&&$custom_media_code1["link"]!=''){
-        echo '<tr>';
-            echo '<td>';
-            echo '<label>Video :</label>';
-            echo '</td>';
-            echo '<td>';
-            echo '<input type="text" name="newslettermeta['.$num_tmp.'][link]" value="'.stripslashes($custom_media_code1["link"]).'" id="_media_meta_'.$num_tmp.'" size="50%" />';
-            echo '<input type="hidden" name="newslettermeta['.$num_tmp.'][mediatype]" value="video"/>';
-            echo '</td>';
-            echo '<td>';
-            echo '<input class="upload_img_button"  id="_media_meta_'.$num_tmp.'" type="button" value="Upload Video" />';
-            echo '</td>';
-            echo '<td>';
-            echo '<input class="delete_img_button" type="button" value="Delete" onClick="jQuery(this).parent().parent().remove();"/>';
-            echo '</td>';
-          echo '</tr>';
-          $num_tmp++;
-      }
-      */
 	}
 }
 ?>
      </tbody></table>
-     <table><tbody>
-        <tr> <td></td> <td></td> <td></td>  </tr>
-        <tr> <td></td> <td></td> </tr>
-     </tbody></table>
 </div><!-- End div_media_meta_box_content-->
 
-</div> <!-- End admin_media_meta_control-->  
+<div class="div_media_meta_box_content">
+    <table id="media_meta_table_bottom" cellpadding="0" cellspacing="0"><tbody>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr><td colspan="2"><label><h1>Notes : (some special tag)</h1></label></td></tr>
+    <tr>
+        <td><label>- Text align right:</label></td>
+        <td><textarea readonly="readonly" cols="100" rows="1"><p style="text-align:right;margin:0px;">text text text text</p></textarea>
+        </td>
+    </tr>
     
+    <tr>
+        <td><label>- Link:</label></td>
+        <td><textarea readonly="readonly" cols="100" rows="1"><a style="color:#c8b27b;text-decoration: none;" href="http://cfmart.fr/">http://cfmart.fr/</a></textarea>
+        </td>
+    </tr>
     
+    <tr>
+        <td><label>- Text align right with link inside:</label></td>
+        <td><textarea readonly="readonly" cols="100" rows="1"><p style="text-align:right;margin:0px;">Pierre GREFFE Avocat à la Cour – <a style="color:#ffffff;text-decoration: none;" href="www.cabinet-greffe.com" >www.cabinet-greffe.com</a></p></textarea>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><label>- A small space:</label></td>
+        <td><input type="text" readonly="readonly" value="&amp;nbsp;" style="background:#ffffff;"/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><label>- A line break:</label></td>
+        <td><textarea readonly="readonly" cols="100" rows="1"><br/></textarea>
+        </td>
+    </tr>
+
+    </tbody></table>
+</div>
+
+</div> <!-- End admin_media_meta_control-->

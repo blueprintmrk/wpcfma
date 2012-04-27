@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://local.cfma/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="April 25, 2012 1:38 pm" -->
+<!-- generated-on="April 27, 2012 4:13 am" -->
 <!-- Debug: Total comment count: 0 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://local.cfma/</loc>
@@ -11,7 +11,7 @@
 <!-- Debug: Start Postings -->
 	<url>
 		<loc>http://local.cfma/lancement-de-la-cfma/</loc>
-		<lastmod>2012-04-25T13:37:22+00:00</lastmod>
+		<lastmod>2012-04-27T04:12:20+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
